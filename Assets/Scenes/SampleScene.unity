@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 106101534}
   - component: {fileID: 106101537}
   - component: {fileID: 106101536}
-  - component: {fileID: 106101535}
+  - component: {fileID: 106101538}
   m_Layer: 5
   m_Name: WheelOfTime
   m_TagString: Untagged
@@ -145,30 +145,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 106101533}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.58778524, w: 0.809017}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 661139806}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 72}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 50, y: 20}
   m_SizeDelta: {x: 256, y: 226}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &106101535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106101533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94906c1762102b84d8e6c0a43f450ad4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &106101536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,6 +195,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 106101533}
   m_CullTransparentMesh: 1
+--- !u!95 &106101538
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106101533}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1ac869e426f254b4bbf68aacc252a4f0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &156166466
 GameObject:
   m_ObjectHideFlags: 0
@@ -2318,11 +2328,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e677fd5ea2f6c0e4eb1aa7e45c584fdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeSpentInScene: 1
+  timeSpentInScene: 4
   nextScene: 1
   canSwitch: 1
   player: {fileID: 299927503}
   camera: {fileID: 1481652214}
+  wheel: {fileID: 106101533}
 --- !u!4 &1334700435
 Transform:
   m_ObjectHideFlags: 0

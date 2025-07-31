@@ -10,6 +10,7 @@ public class SceneController : MonoBehaviour
     [SerializeField] private bool canSwitch = true;
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject camera;
+    [SerializeField] private GameObject wheel;
 
     // Update is called once per frame
     void Update()
@@ -27,6 +28,7 @@ public class SceneController : MonoBehaviour
         yield return new WaitForSeconds(timeSpentInScene);
         player.transform.position = new Vector2(player.transform.position.x, -3 + sceneIndex*50);
         camera.transform.position = new Vector3(camera.transform.position.x, sceneIndex*50, -10);
+        wheel.GetComponent<Animator>().SetInteger("Timeline", sceneIndex);
         if (sceneIndex < 2)
             sceneIndex++;
         else
