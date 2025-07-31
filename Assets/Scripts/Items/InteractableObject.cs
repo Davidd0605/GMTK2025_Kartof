@@ -6,6 +6,7 @@ public class InteractableObject : MonoBehaviour
     private GameObject player;
 
     [SerializeField] private float pickupThreshold = 2.0f;
+    [SerializeField] private int itemId;
     // Update is called once per frame
 
     private void Start()
@@ -22,8 +23,17 @@ public class InteractableObject : MonoBehaviour
             //Enable outline
             if (Input.GetKeyDown(KeyCode.E)) //pickup
             {
-                Destroy(gameObject);
-                player.GetComponent<InventoryManager>().addItem(2, gameObject.GetComponent<SpriteRenderer>().sprite);
+                //check if can be added
+                try
+                {
+                    player.GetComponent<InventoryManager>().addItem(itemId);
+                    Destroy(gameObject);
+
+                } catch (System.InvalidOperationException e)
+                {
+                    //Display some message idk
+                }
+
             }
         }
     }

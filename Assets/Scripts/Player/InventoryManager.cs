@@ -26,19 +26,39 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    public void changeSelectedIndex(int index)
+    private void changeSelectedIndex(int index)
     {
-        Debug.Log("Changing cursor sprite");
         selectedIndex = index;
-
-        if (itemIdList[index] != -1)
+        if (index != -1 && itemIdList[index] != -1)
         {
 
             setCursor(buttonList[index].image.sprite);
         }
     }
 
-    public void addItem(int id, Sprite sprite)
+    public void handleInventoryClick(int index)
+    {
+        if (selectedIndex != -1)
+        {
+            if(ItemInteractionMatrix
+                .GetCombinationResult(itemIdList[selectedIndex], itemIdList[index]) != -1) //if there is some combination
+            {
+                itemIdList[index] = ItemInteractionMatrix
+                .GetCombinationResult(itemIdList[selectedIndex], itemIdList[index]);
+                buttonList[index].image.sprite = SpriteMap.GetSprite(itemIdList[index]);
+                removeItem(selectedIndex);
+
+            } else
+            {
+                swapItems(index, selectedIndex);
+            }
+            index = -1;
+            resetCursor();
+        } 
+        changeSelectedIndex(index);
+    }
+
+    public void addItem(int id)
     {
         bool added = false;
         
@@ -47,7 +67,7 @@ public class InventoryManager : MonoBehaviour
             if (itemIdList[i] == -1)
             {
                 itemIdList[i] = id;
-                buttonList[i].image.sprite = sprite;
+                buttonList[i].image.sprite = SpriteMap.GetSprite(id);
                 added = true;
                 break;
             }
@@ -55,16 +75,24 @@ public class InventoryManager : MonoBehaviour
 
         if (!added)
         {
-            Debug.LogError("Inventory full! Cannot add anymore items.");
+            throw new System.InvalidOperationException("Inventory is full");
         }
     }
-
     public void removeItem(int index)
     {
         itemIdList[index] = -1;
         buttonList[index].image.sprite = emptySlotSprite;
     }
+    private void swapItems(int index1, int index2)
+    {
+        Sprite auxSprite = buttonList[index1].image.sprite;
+        buttonList[index1].image.sprite = buttonList[index2].image.sprite;
+        buttonList[index2].image.sprite = auxSprite;
 
+        int auxValue = itemIdList[index1];
+        itemIdList[index1] = itemIdList[index2];
+        itemIdList[index2] = auxValue;
+    }
     private void setCursor(Sprite sprite)
     {
         if (sprite == null)
@@ -82,7 +110,6 @@ public class InventoryManager : MonoBehaviour
 
         Cursor.SetCursor(cursorTexture, hotspot, CursorMode.Auto);
     }
-
     private void resetCursor()
     {
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);

@@ -12,6 +12,6 @@ public class InventorySlot : MonoBehaviour
 
     public void OnClick()
     {
-        inventoryManager.changeSelectedIndex(slotID);
+        inventoryManager.handleInventoryClick(slotID);
     }
 }
