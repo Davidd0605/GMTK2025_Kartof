@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
     [SerializeField] private float timeSpentInScene = 4f;
-    [SerializeField] private int nextScene = 1;
-    private bool canSwitch = true;
+    [SerializeField] private int nextScene = 2;
+    [SerializeField] private bool canSwitch = true;
     private static SceneController instance;
     void Awake()
     {
@@ -36,11 +36,11 @@ public class SceneController : MonoBehaviour
     {
         Debug.Log(sceneIndex);
         yield return new WaitForSeconds(timeSpentInScene);
-        SceneManager.LoadScene(sceneIndex);
-        if (sceneIndex < 4)
+        SceneManager.LoadScene("Timeline"+sceneIndex);
+        if (sceneIndex < 5)
             sceneIndex++;
         else
-            sceneIndex = 0;
+            sceneIndex = 1;
         nextScene = sceneIndex;
         canSwitch = true;
     }
