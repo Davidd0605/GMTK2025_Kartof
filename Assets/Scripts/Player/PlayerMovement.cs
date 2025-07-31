@@ -5,7 +5,19 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private Rigidbody2D rb;
     private Vector2 movement;
-
+    private static PlayerMovement instance;
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     void Update()
     {
         // Get horizontal input using the old Input system
