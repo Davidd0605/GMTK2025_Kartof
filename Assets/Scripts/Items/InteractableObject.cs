@@ -20,7 +20,6 @@ public class InteractableObject : MonoBehaviour
 
         if (distance < pickupThreshold)
         {
-            //Enable outline
             if (Input.GetKeyDown(KeyCode.E)) //pickup
             {
                 //check if can be added

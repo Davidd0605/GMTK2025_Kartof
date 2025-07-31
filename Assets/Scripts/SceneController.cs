@@ -10,6 +10,8 @@ public class SceneController : MonoBehaviour
     [SerializeField] private bool canSwitch = true;
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject camera;
+    [SerializeField] private GameObject wheel;
+    [SerializeField] private TimeTravelEffect timeTravelEffect;
 
     // Update is called once per frame
     void Update()
@@ -25,8 +27,13 @@ public class SceneController : MonoBehaviour
     {
         Debug.Log(sceneIndex);
         yield return new WaitForSeconds(timeSpentInScene);
+
+        timeTravelEffect.TriggerTimeTravel();
+        yield return new WaitForSeconds(timeTravelEffect.effectDuration + timeTravelEffect.effectDisplacement);
+
         player.transform.position = new Vector2(player.transform.position.x, -3 + sceneIndex*50);
         camera.transform.position = new Vector3(camera.transform.position.x, sceneIndex*50, -10);
+        wheel.GetComponent<Animator>().SetInteger("Timeline", sceneIndex);
         if (sceneIndex < 2)
             sceneIndex++;
         else
