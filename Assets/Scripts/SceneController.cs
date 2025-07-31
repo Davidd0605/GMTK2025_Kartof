@@ -6,21 +6,10 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
     [SerializeField] private float timeSpentInScene = 4f;
-    [SerializeField] private int nextScene = 2;
+    [SerializeField] private int nextScene = 0;
     [SerializeField] private bool canSwitch = true;
-    private static SceneController instance;
-    void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
+    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject camera;
 
     // Update is called once per frame
     void Update()
@@ -36,11 +25,12 @@ public class SceneController : MonoBehaviour
     {
         Debug.Log(sceneIndex);
         yield return new WaitForSeconds(timeSpentInScene);
-        SceneManager.LoadScene("Timeline"+sceneIndex);
-        if (sceneIndex < 5)
+        player.transform.position = new Vector2(player.transform.position.x, -3 + sceneIndex*50);
+        camera.transform.position = new Vector3(camera.transform.position.x, sceneIndex*50, -10);
+        if (sceneIndex < 2)
             sceneIndex++;
         else
-            sceneIndex = 1;
+            sceneIndex = -2;
         nextScene = sceneIndex;
         canSwitch = true;
     }
