@@ -7,11 +7,19 @@ public class InteractableObject : MonoBehaviour
 
     [SerializeField] private float pickupThreshold = 2.0f;
     [SerializeField] private int itemId;
+
+
+    public Material highlightMaterial;
+    public Material defaultMaterial;
+
+
+    private bool swapped;
     // Update is called once per frame
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        swapped = false;
     }
 
     void Update()
@@ -20,6 +28,7 @@ public class InteractableObject : MonoBehaviour
 
         if (distance < pickupThreshold)
         {
+            GetComponent<SpriteRenderer>().material = highlightMaterial;
             if (Input.GetKeyDown(KeyCode.E)) //pickup
             {
                 //check if can be added
@@ -33,6 +42,14 @@ public class InteractableObject : MonoBehaviour
                     //Display some message idk
                 }
 
+            }
+            swapped = false;
+        } else
+        {
+            if (swapped == false)
+            {
+                swapped = true;
+                GetComponent<SpriteRenderer>().material = defaultMaterial;
             }
         }
     }

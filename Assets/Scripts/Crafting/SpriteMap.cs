@@ -10,9 +10,11 @@ public static class SpriteMap
     {
         //add new item sprites here
         { 0, "Sprites/Images" },
-        { 1, "Sprites/WOOD" },
-        { 2, "Sprites/ROCK" },
-        { 3, "Sprites/AXZ" }
+        { 1, "Sprites/InventorySprites/InventoryStick" },
+        { 2, "Sprites/InventorySprites/InventoryRock" },
+        { 3, "Sprites/InventorySprites/InventoryAxe" },
+        { 4, "Sprites/InventorySprites/InventorySeed"},
+        { 5, "Sprites/InventorySprites/InventoryWindup"}
     };
 
     public static void Initialize()
