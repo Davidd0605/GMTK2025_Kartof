@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Resources/background assests/future/future_background.png.meta
 guid: 15831b9fad18e284ba5e2ac32382a1bb
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -2470255841453116562
-    second: future_background_0
-========
-guid: cd90dbb27fe292a4d8b4d7d415c4f482
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -9172182072566118488
-    second: past_background_0
->>>>>>>> e6221981e9dd075473fe5ed72ed5b1bc03389558:Assets/Resources/background assests/past/past_background.png.meta
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,11 +39,11 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -120,43 +108,12 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Resources/background assests/future/future_background.png.meta
-      name: future_background_0
-========
-      name: past_background_0
->>>>>>>> e6221981e9dd075473fe5ed72ed5b1bc03389558:Assets/Resources/background assests/past/past_background.png.meta
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3840
-        height: 2160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-<<<<<<<< HEAD:Assets/Resources/background assests/future/future_background.png.meta
-      spriteID: e637ad17663e7bdd0800000000000000
-      internalID: -2470255841453116562
-========
-      spriteID: 8a78d75500dd5b080800000000000000
-      internalID: -9172182072566118488
->>>>>>>> e6221981e9dd075473fe5ed72ed5b1bc03389558:Assets/Resources/background assests/past/past_background.png.meta
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -165,12 +122,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-<<<<<<<< HEAD:Assets/Resources/background assests/future/future_background.png.meta
-      future_background_0: -2470255841453116562
-========
-      past_background_0: -9172182072566118488
->>>>>>>> e6221981e9dd075473fe5ed72ed5b1bc03389558:Assets/Resources/background assests/past/past_background.png.meta
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
