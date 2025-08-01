@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Resources/background assests/future/future_shelf.png.meta
 guid: db6740f9b95ca22488320b0e89cb6c5c
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 2232897301540211531
-    second: future_shelf_0
-========
-guid: 8e6219fa4207c2240822dc67a0cf83a6
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 2588929617881309653
-    second: past_shelf_0
->>>>>>>> e6221981e9dd075473fe5ed72ed5b1bc03389558:Assets/Resources/background assests/past/past_shelf.png.meta
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,11 +39,11 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -120,49 +108,12 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Resources/background assests/future/future_shelf.png.meta
-      name: future_shelf_0
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 0
-        width: 769
-        height: 55
-========
-      name: past_shelf_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 767
-        height: 56
->>>>>>>> e6221981e9dd075473fe5ed72ed5b1bc03389558:Assets/Resources/background assests/past/past_shelf.png.meta
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-<<<<<<<< HEAD:Assets/Resources/background assests/future/future_shelf.png.meta
-      spriteID: b4b8b3ee348dcfe10800000000000000
-      internalID: 2232897301540211531
-========
-      spriteID: 5d1ad4e45c9bde320800000000000000
-      internalID: 2588929617881309653
->>>>>>>> e6221981e9dd075473fe5ed72ed5b1bc03389558:Assets/Resources/background assests/past/past_shelf.png.meta
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -171,12 +122,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-<<<<<<<< HEAD:Assets/Resources/background assests/future/future_shelf.png.meta
-      future_shelf_0: 2232897301540211531
-========
-      past_shelf_0: 2588929617881309653
->>>>>>>> e6221981e9dd075473fe5ed72ed5b1bc03389558:Assets/Resources/background assests/past/past_shelf.png.meta
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
