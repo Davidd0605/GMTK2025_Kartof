@@ -3,11 +3,10 @@ using UnityEngine;
 public class ClickToAdvanceTime : MonoBehaviour
 {
     [SerializeField] private SceneController sceneController;
+    [SerializeField] private LayerMask targetLayer;
 
     private void Click()
     {
-        Debug.Log("Clicked");
-
         if (sceneController == null)
         {
             return;
@@ -15,25 +14,19 @@ public class ClickToAdvanceTime : MonoBehaviour
 
         sceneController.AdvanceTime();
     }
-
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-
             Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            // Get all colliders at the click point
-            Collider2D[] hits = Physics2D.OverlapPointAll(worldPoint);
+            RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero, 10f, targetLayer);
 
-            foreach (var hit in hits)
+            if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
-                if (hit.gameObject == this.gameObject)
-                {
-                    Click();
-                    break;
-                }
+                Click();
             }
         }
     }
+
 }
