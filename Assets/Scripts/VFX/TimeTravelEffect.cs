@@ -1,9 +1,12 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
 public class TimeTravelEffect : MonoBehaviour
 {
+    [Header("VFX")]
+
     [SerializeField] private Volume volume;
     public float effectDuration = 2f;
     [Range(-1f, 1f)] public float effectDisplacement = -0.1f;

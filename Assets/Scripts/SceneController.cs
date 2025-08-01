@@ -13,32 +13,82 @@ public class SceneController : MonoBehaviour
     [SerializeField] private GameObject wheel;
     [SerializeField] private TimeTravelEffect timeTravelEffect;
 
-    // Update is called once per frame
+    private bool isTransitioning = false;
+    private float transitionTimer = 0f;
+    private float postEffectDelay = 0f;
+
+    private void Start()
+    {
+        AdvanceTime();
+    }
+
     void Update()
     {
-        if (canSwitch)
+        if (isTransitioning)
         {
-            canSwitch = false;
-            StartCoroutine(LoadScene(nextScene));
+            //waiting for effect duration before finishing transition
+            if (postEffectDelay > 0)
+            {
+                postEffectDelay -= Time.deltaTime;
+                if (postEffectDelay <= 0)
+                {
+                    FinishTransition();
+                }
+            }
+            return;
+        }
+
+        if (transitionTimer > 0)
+        {
+            transitionTimer -= Time.deltaTime;
+            if (transitionTimer <= 0)
+            {
+                StartTransition();
+            }
         }
     }
 
-    private IEnumerator LoadScene(int sceneIndex)
+    public void AdvanceTime()
     {
-        Debug.Log(sceneIndex);
-        yield return new WaitForSeconds(timeSpentInScene);
+        if (!isTransitioning)
+        {
+            StartTransition();
+        }
+    }
 
-        timeTravelEffect.TriggerTimeTravel();
-        yield return new WaitForSeconds(timeTravelEffect.effectDuration + timeTravelEffect.effectDisplacement);
+    private void StartTransition()
+    {
+        isTransitioning = true;
 
-        player.transform.position = new Vector2(player.transform.position.x, -3 + sceneIndex*50);
-        camera.transform.position = new Vector3(camera.transform.position.x, sceneIndex*50, -10);
-        wheel.GetComponent<Animator>().SetInteger("Timeline", sceneIndex);
-        if (sceneIndex < 2)
-            sceneIndex++;
+        if (timeTravelEffect != null)
+        {
+            timeTravelEffect.TriggerTimeTravel();
+            postEffectDelay = timeTravelEffect.effectDuration + timeTravelEffect.effectDisplacement;
+        }
         else
-            sceneIndex = -2;
-        nextScene = sceneIndex;
-        canSwitch = true;
+        {
+            postEffectDelay = 0f;
+        }
+    }
+
+    private void FinishTransition()
+    {
+
+        player.transform.position = new Vector2(player.transform.position.x, -3 + nextScene * 50);
+
+        camera.transform.position = new Vector3(camera.transform.position.x, nextScene * 50, -10);
+
+
+        Animator anim = wheel.GetComponent<Animator>();
+        if (anim != null)
+            anim.SetInteger("Timeline", nextScene);
+
+
+        nextScene = (nextScene < 2) ? nextScene + 1 : -2;
+
+        //reset flags
+        isTransitioning = false;
+        transitionTimer = timeSpentInScene;
+        postEffectDelay = 0f;
     }
 }
