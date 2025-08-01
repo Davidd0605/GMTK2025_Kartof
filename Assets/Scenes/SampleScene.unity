@@ -860,7 +860,7 @@ MonoBehaviour:
   moveSpeed: 10
   rb: {fileID: 299927505}
   sprite: {fileID: 299927507}
-  anim: {fileID: 0}
+  anim: {fileID: 299927511}
 --- !u!50 &299927505
 Rigidbody2D:
   serializedVersion: 5
