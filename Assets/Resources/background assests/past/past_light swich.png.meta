@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 12e6a66967563bd448fc1ff0c842753c
+guid: f4c9d0f0a1e60254aa62b9c75db3f061
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8695914354655365231
-    second: feature_bookshelf_0
-  - first:
-      213: -3064362840143628805
-    second: feature_bookshelf_1
-  - first:
-      213: 5147053297838438908
-    second: feature_bookshelf_2
+      213: -3698267425800574527
+    second: past_light swich_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: feature_bookshelf_0
+      name: past_light swich_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 49
-        width: 1084
-        height: 1990
+        y: 0
+        width: 236
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,52 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 197fb85a7f7e15780800000000000000
-      internalID: -8695914354655365231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: feature_bookshelf_1
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 25
-        width: 195
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bf5f45a8b323975d0800000000000000
-      internalID: -3064362840143628805
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: feature_bookshelf_2
-      rect:
-        serializedVersion: 2
-        x: 707
-        y: 38
-        width: 22
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cf9b9a144b10e6740800000000000000
-      internalID: 5147053297838438908
+      spriteID: 1c922c8de5d1dacc0800000000000000
+      internalID: -3698267425800574527
       vertices: []
       indices: 
       edges: []
@@ -185,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      feature_bookshelf_0: -8695914354655365231
-      feature_bookshelf_1: -3064362840143628805
-      feature_bookshelf_2: 5147053297838438908
+      past_light swich_0: -3698267425800574527
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

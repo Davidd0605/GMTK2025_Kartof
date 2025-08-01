@@ -28,7 +28,10 @@ public class InteractableObject : MonoBehaviour
 
         if (distance < pickupThreshold)
         {
+
+            
             GetComponent<SpriteRenderer>().material = highlightMaterial;
+            GetComponent<SpriteRenderer>().material.SetFloat("_Thickness", Mathf.Abs(Mathf.Sin(Time.time) * 10));
             if (Input.GetKeyDown(KeyCode.E)) //pickup
             {
                 //check if can be added

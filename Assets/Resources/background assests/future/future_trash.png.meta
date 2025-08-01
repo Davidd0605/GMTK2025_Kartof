@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 81aa2e8b7abc88946adc6ad01bcb929a
+guid: 1ff1df6454bb43746a643fd8aaff5fcb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1554363922898132076
-    second: feature_bowl_0
+      213: -6558217787354486934
+    second: future_trash_0
   - first:
-      213: 3436501677821190251
-    second: feature_bowl_1
+      213: -955188006759924641
+    second: future_trash_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: feature_bowl_0
+      name: future_trash_0
       rect:
         serializedVersion: 2
-        x: 3016
-        y: 1613
-        width: 291
-        height: 243
+        x: 0
+        y: 0
+        width: 287
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c6c9604a0c5329510800000000000000
-      internalID: 1554363922898132076
+      spriteID: a6766195ba78cf4a0800000000000000
+      internalID: -6558217787354486934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: feature_bowl_1
+      name: future_trash_1
       rect:
         serializedVersion: 2
-        x: 3356
-        y: 1615
-        width: 226
-        height: 202
+        x: 295
+        y: 0
+        width: 284
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b60e0909118e0bf20800000000000000
-      internalID: 3436501677821190251
+      spriteID: f5c7c53919d7eb2f0800000000000000
+      internalID: -955188006759924641
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      feature_bowl_0: 1554363922898132076
-      feature_bowl_1: 3436501677821190251
+      future_trash_0: -6558217787354486934
+      future_trash_1: -955188006759924641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

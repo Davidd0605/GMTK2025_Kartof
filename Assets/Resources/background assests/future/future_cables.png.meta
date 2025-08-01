@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4ab45724340e78a48827aa13a1243d80
+guid: 404557dc0ca7ea1419dbcb3e10cae3f1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2756152444824351126
-    second: feature_desk_0
+      213: 8246367647144746642
+    second: future_cables_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: feature_desk_0
+      name: future_cables_0
       rect:
         serializedVersion: 2
-        x: 1834
-        y: 79
-        width: 1595
-        height: 667
+        x: 2
+        y: 4
+        width: 2433
+        height: 296
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a6e8b6344fd20c9d0800000000000000
-      internalID: -2756152444824351126
+      spriteID: 29e16571fabf07270800000000000000
+      internalID: 8246367647144746642
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      feature_desk_0: -2756152444824351126
+      future_cables_0: 8246367647144746642
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

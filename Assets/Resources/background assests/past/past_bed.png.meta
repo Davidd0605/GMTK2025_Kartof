@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: abdb81e6d841a8145a4c799b72a960d3
+guid: 9f050ac051626d544b0c3256f663f249
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5938578793853232941
-    second: feature_trash_0
-  - first:
-      213: 6297040546279454421
-    second: feature_trash_1
+      213: -5641647106638472302
+    second: past_bed_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: feature_trash_0
+      name: past_bed_0
       rect:
         serializedVersion: 2
-        x: 3260
+        x: 0
         y: 0
-        width: 288
-        height: 150
+        width: 1241
+        height: 515
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d272a46f2f11a6250800000000000000
-      internalID: 5938578793853232941
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: feature_trash_1
-      rect:
-        serializedVersion: 2
-        x: 3556
-        y: 0
-        width: 284
-        height: 457
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5d6f7318305936750800000000000000
-      internalID: 6297040546279454421
+      spriteID: 29b14b4e8d7d4b1b0800000000000000
+      internalID: -5641647106638472302
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      feature_trash_0: 5938578793853232941
-      feature_trash_1: 6297040546279454421
+      past_bed_0: -5641647106638472302
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

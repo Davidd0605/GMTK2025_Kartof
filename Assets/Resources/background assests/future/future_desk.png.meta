@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f23f9bcf532a410489db385e0a3715af
+guid: 191d1ca6549943c4a91906faa8c0a98c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6662318037712143037
-    second: feature_background_0
+      213: 295394811926787106
+    second: future_desk_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: feature_background_0
+      name: future_desk_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 3840
-        height: 2160
+        y: 2
+        width: 1594
+        height: 667
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db28282f4fe457c50800000000000000
-      internalID: 6662318037712143037
+      spriteID: 224b3613404791400800000000000000
+      internalID: 295394811926787106
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      feature_background_0: 6662318037712143037
+      future_desk_0: 295394811926787106
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
