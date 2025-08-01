@@ -1,0 +1,633 @@
+fileFormatVersion: 2
+guid: fdd2e1e93342ee94ab58a765be35bc3a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1585394552222477351
+    second: WalkcycleNoGoggles_0
+  - first:
+      213: -7767157560873468109
+    second: WalkcycleNoGoggles_1
+  - first:
+      213: -1339400831673358002
+    second: WalkcycleNoGoggles_2
+  - first:
+      213: 1857899305439543918
+    second: WalkcycleNoGoggles_3
+  - first:
+      213: -1891953783786439019
+    second: WalkcycleNoGoggles_4
+  - first:
+      213: 4539124744497106913
+    second: WalkcycleNoGoggles_5
+  - first:
+      213: 677404674295444037
+    second: WalkcycleNoGoggles_6
+  - first:
+      213: 7034079732590041350
+    second: WalkcycleNoGoggles_7
+  - first:
+      213: -3626291748392347152
+    second: WalkcycleNoGoggles_8
+  - first:
+      213: -6029531440140755750
+    second: WalkcycleNoGoggles_9
+  - first:
+      213: 4176074209410471334
+    second: WalkcycleNoGoggles_10
+  - first:
+      213: -177885478929149178
+    second: WalkcycleNoGoggles_11
+  - first:
+      213: -8527939448155488840
+    second: WalkcycleNoGoggles_12
+  - first:
+      213: 4986871862046745075
+    second: WalkcycleNoGoggles_13
+  - first:
+      213: -8484357342901298729
+    second: WalkcycleNoGoggles_14
+  - first:
+      213: 2799530250113133116
+    second: WalkcycleNoGoggles_15
+  - first:
+      213: -6238263784016913890
+    second: WalkcycleNoGoggles_16
+  - first:
+      213: 5446153567464281443
+    second: WalkcycleNoGoggles_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4863
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72c6f0a02f3700610800000000000000
+      internalID: 1585394552222477351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_1
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 4863
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33fb5adb953853490800000000000000
+      internalID: -7767157560873468109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_2
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 4863
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e492f304a0e796de0800000000000000
+      internalID: -1339400831673358002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_3
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 4863
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e624b21239598c910800000000000000
+      internalID: 1857899305439543918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_4
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 4863
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ef3f1ce0e6eb5e0800000000000000
+      internalID: -1891953783786439019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3242
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef8fe2e7e53efe30800000000000000
+      internalID: 4539124744497106913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_6
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 3242
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 542b19456ff966900800000000000000
+      internalID: 677404674295444037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_7
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 3242
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 609ddc6af321e9160800000000000000
+      internalID: 7034079732590041350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_8
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 3242
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f9d4252ed2dcadc0800000000000000
+      internalID: -3626291748392347152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_9
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 3242
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc5c5cd91dc25ca0800000000000000
+      internalID: -6029531440140755750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1621
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a5d49f1e5564f930800000000000000
+      internalID: 4176074209410471334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_11
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1621
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6035ab17916088df0800000000000000
+      internalID: -177885478929149178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_12
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1621
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bdb6ae314ca6a980800000000000000
+      internalID: -8527939448155488840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_13
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 1621
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f1efa5798de43540800000000000000
+      internalID: 4986871862046745075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_14
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 1621
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d914ecd2f1814a80800000000000000
+      internalID: -8484357342901298729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a24ff0eede9d620800000000000000
+      internalID: 2799530250113133116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_16
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1adc72e32c3d69a0800000000000000
+      internalID: -6238263784016913890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_17
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 0
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3655fec80df949b40800000000000000
+      internalID: 5446153567464281443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_18
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 0
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7c78df5f00d9648a3ab3f43e91ad67
+      internalID: 2071763465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleNoGoggles_19
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 0
+        width: 1080
+        height: 1621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428b1035aadd9b94d88f8f880c9ceede
+      internalID: 2067346607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4ac3ce8894717324c84a8446f7379c91
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":4.0},"gridSpriteSize":{"x":1080.0,"y":1621.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      WalkcycleNoGoggles_0: 1585394552222477351
+      WalkcycleNoGoggles_1: -7767157560873468109
+      WalkcycleNoGoggles_10: 4176074209410471334
+      WalkcycleNoGoggles_11: -177885478929149178
+      WalkcycleNoGoggles_12: -8527939448155488840
+      WalkcycleNoGoggles_13: 4986871862046745075
+      WalkcycleNoGoggles_14: -8484357342901298729
+      WalkcycleNoGoggles_15: 2799530250113133116
+      WalkcycleNoGoggles_16: -6238263784016913890
+      WalkcycleNoGoggles_17: 5446153567464281443
+      WalkcycleNoGoggles_18: 2071763465
+      WalkcycleNoGoggles_19: 2067346607
+      WalkcycleNoGoggles_2: -1339400831673358002
+      WalkcycleNoGoggles_3: 1857899305439543918
+      WalkcycleNoGoggles_4: -1891953783786439019
+      WalkcycleNoGoggles_5: 4539124744497106913
+      WalkcycleNoGoggles_6: 677404674295444037
+      WalkcycleNoGoggles_7: 7034079732590041350
+      WalkcycleNoGoggles_8: -3626291748392347152
+      WalkcycleNoGoggles_9: -6029531440140755750
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

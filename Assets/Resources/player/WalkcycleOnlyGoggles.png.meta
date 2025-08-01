@@ -1,0 +1,599 @@
+fileFormatVersion: 2
+guid: 8f12ffde1878ed94e94f3a22b5c87b0e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5945484383225534488
+    second: WalkcycleOnlyGoggles_0
+  - first:
+      213: 2644200821514068259
+    second: WalkcycleOnlyGoggles_1
+  - first:
+      213: 7889760465943580982
+    second: WalkcycleOnlyGoggles_2
+  - first:
+      213: 7858411119792699425
+    second: WalkcycleOnlyGoggles_3
+  - first:
+      213: -650688359687503571
+    second: WalkcycleOnlyGoggles_4
+  - first:
+      213: -5619709454668863171
+    second: WalkcycleOnlyGoggles_5
+  - first:
+      213: -6288889215636277079
+    second: WalkcycleOnlyGoggles_6
+  - first:
+      213: 7303683865061340566
+    second: WalkcycleOnlyGoggles_7
+  - first:
+      213: 8319855079712952272
+    second: WalkcycleOnlyGoggles_8
+  - first:
+      213: 3262584876783549603
+    second: WalkcycleOnlyGoggles_9
+  - first:
+      213: 7642524679034691968
+    second: WalkcycleOnlyGoggles_10
+  - first:
+      213: 468537060604917872
+    second: WalkcycleOnlyGoggles_11
+  - first:
+      213: 3481958412270865747
+    second: WalkcycleOnlyGoggles_12
+  - first:
+      213: 4058493764995820167
+    second: WalkcycleOnlyGoggles_13
+  - first:
+      213: 7854091539960575412
+    second: WalkcycleOnlyGoggles_14
+  - first:
+      213: 4203088996704895618
+    second: WalkcycleOnlyGoggles_15
+  - first:
+      213: -425826103868600640
+    second: WalkcycleOnlyGoggles_16
+  - first:
+      213: 6604863883650196802
+    second: WalkcycleOnlyGoggles_17
+  - first:
+      213: 8523291759038260824
+    second: WalkcycleOnlyGoggles_18
+  - first:
+      213: 8592440190293636757
+    second: WalkcycleOnlyGoggles_19
+  - first:
+      213: -131033284387273700
+    second: WalkcycleOnlyGoggles_20
+  - first:
+      213: -5747048828507359694
+    second: WalkcycleOnlyGoggles_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WalkcycleOnlyGoggles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 609
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e7a53834756d7da0800000000000000
+      internalID: -5945484383225534488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleOnlyGoggles_1
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 609
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 321642933a612b420800000000000000
+      internalID: 2644200821514068259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleOnlyGoggles_2
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 609
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 631dc7f875f0e7d60800000000000000
+      internalID: 7889760465943580982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleOnlyGoggles_3
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 609
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 128393e174fae0d60800000000000000
+      internalID: 7858411119792699425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleOnlyGoggles_4
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 609
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d214855626a48f6f0800000000000000
+      internalID: -650688359687503571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleOnlyGoggles_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 406
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d39ee858608c202b0800000000000000
+      internalID: -5619709454668863171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleOnlyGoggles_6
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 406
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8f63e049069b8a0800000000000000
+      internalID: -6288889215636277079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleOnlyGoggles_7
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 406
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695bbb857c5eb5560800000000000000
+      internalID: 7303683865061340566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleOnlyGoggles_8
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 406
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df05015d10167370800000000000000
+      internalID: 8319855079712952272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleOnlyGoggles_9
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 406
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3acbe36d8a7074d20800000000000000
+      internalID: 3262584876783549603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleOnlyGoggles_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 203
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 081e40924b3bf0a60800000000000000
+      internalID: 7642524679034691968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleOnlyGoggles_11
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 203
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 078367569f3908600800000000000000
+      internalID: 468537060604917872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleOnlyGoggles_12
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 203
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d861e4ab6625030800000000000000
+      internalID: 3481958412270865747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleOnlyGoggles_13
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 203
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78aa6b1939aa25830800000000000000
+      internalID: 4058493764995820167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleOnlyGoggles_14
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 203
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b530c094a65ffc60800000000000000
+      internalID: 7854091539960575412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleOnlyGoggles_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282c2ff6c2f545a30800000000000000
+      internalID: 4203088996704895618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleOnlyGoggles_16
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 0
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cec2d62a69271af0800000000000000
+      internalID: -425826103868600640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkcycleOnlyGoggles_17
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 0
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 245e6c645b039ab50800000000000000
+      internalID: 6604863883650196802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9f5f606035ffb1844845e5de479b6fac
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":4.0},"gridSpriteSize":{"x":327.0,"y":203.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      WalkcycleOnlyGoggles_0: -5945484383225534488
+      WalkcycleOnlyGoggles_1: 2644200821514068259
+      WalkcycleOnlyGoggles_10: 7642524679034691968
+      WalkcycleOnlyGoggles_11: 468537060604917872
+      WalkcycleOnlyGoggles_12: 3481958412270865747
+      WalkcycleOnlyGoggles_13: 4058493764995820167
+      WalkcycleOnlyGoggles_14: 7854091539960575412
+      WalkcycleOnlyGoggles_15: 4203088996704895618
+      WalkcycleOnlyGoggles_16: -425826103868600640
+      WalkcycleOnlyGoggles_17: 6604863883650196802
+      WalkcycleOnlyGoggles_2: 7889760465943580982
+      WalkcycleOnlyGoggles_3: 7858411119792699425
+      WalkcycleOnlyGoggles_4: -650688359687503571
+      WalkcycleOnlyGoggles_5: -5619709454668863171
+      WalkcycleOnlyGoggles_6: -6288889215636277079
+      WalkcycleOnlyGoggles_7: 7303683865061340566
+      WalkcycleOnlyGoggles_8: 8319855079712952272
+      WalkcycleOnlyGoggles_9: 3262584876783549603
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
