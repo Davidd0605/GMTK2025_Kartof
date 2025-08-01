@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 69174ce7a3f8aa24fbe27b56b6edaed0
+<<<<<<<< HEAD:Assets/Resources/background assests/future/future_background.png.meta
+guid: 15831b9fad18e284ba5e2ac32382a1bb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2470255841453116562
+    second: future_background_0
+========
+guid: cd90dbb27fe292a4d8b4d7d415c4f482
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -9172182072566118488
     second: past_background_0
+>>>>>>>> e6221981e9dd075473fe5ed72ed5b1bc03389558:Assets/Resources/background assests/past/past_background.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,11 +105,28 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Resources/background assests/future/future_background.png.meta
+      name: future_background_0
+========
       name: past_background_0
+>>>>>>>> e6221981e9dd075473fe5ed72ed5b1bc03389558:Assets/Resources/background assests/past/past_background.png.meta
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +141,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<<< HEAD:Assets/Resources/background assests/future/future_background.png.meta
+      spriteID: e637ad17663e7bdd0800000000000000
+      internalID: -2470255841453116562
+========
       spriteID: 8a78d75500dd5b080800000000000000
       internalID: -9172182072566118488
+>>>>>>>> e6221981e9dd075473fe5ed72ed5b1bc03389558:Assets/Resources/background assests/past/past_background.png.meta
       vertices: []
       indices: 
       edges: []
@@ -135,7 +166,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<<< HEAD:Assets/Resources/background assests/future/future_background.png.meta
+      future_background_0: -2470255841453116562
+========
       past_background_0: -9172182072566118488
+>>>>>>>> e6221981e9dd075473fe5ed72ed5b1bc03389558:Assets/Resources/background assests/past/past_background.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

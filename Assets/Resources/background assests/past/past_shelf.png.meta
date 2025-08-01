@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: ebe32257aa099f543b300255303057ee
+<<<<<<<< HEAD:Assets/Resources/background assests/future/future_shelf.png.meta
+guid: db6740f9b95ca22488320b0e89cb6c5c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2232897301540211531
+    second: future_shelf_0
+========
+guid: 8e6219fa4207c2240822dc67a0cf83a6
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 2588929617881309653
     second: past_shelf_0
+>>>>>>>> e6221981e9dd075473fe5ed72ed5b1bc03389558:Assets/Resources/background assests/past/past_shelf.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,10 +105,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Resources/background assests/future/future_shelf.png.meta
+      name: future_shelf_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 769
+        height: 55
+========
       name: past_shelf_0
       rect:
         serializedVersion: 2
@@ -107,6 +138,7 @@ TextureImporter:
         y: 0
         width: 767
         height: 56
+>>>>>>>> e6221981e9dd075473fe5ed72ed5b1bc03389558:Assets/Resources/background assests/past/past_shelf.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +147,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<<< HEAD:Assets/Resources/background assests/future/future_shelf.png.meta
+      spriteID: b4b8b3ee348dcfe10800000000000000
+      internalID: 2232897301540211531
+========
       spriteID: 5d1ad4e45c9bde320800000000000000
       internalID: 2588929617881309653
+>>>>>>>> e6221981e9dd075473fe5ed72ed5b1bc03389558:Assets/Resources/background assests/past/past_shelf.png.meta
       vertices: []
       indices: 
       edges: []
@@ -135,7 +172,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<<< HEAD:Assets/Resources/background assests/future/future_shelf.png.meta
+      future_shelf_0: 2232897301540211531
+========
       past_shelf_0: 2588929617881309653
+>>>>>>>> e6221981e9dd075473fe5ed72ed5b1bc03389558:Assets/Resources/background assests/past/past_shelf.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
