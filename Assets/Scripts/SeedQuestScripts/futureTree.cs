@@ -69,13 +69,13 @@ public class futureTree : MonoBehaviour
 
     private void setFullGrown()
     {
-        transform.position = new Vector3(30f, 0.6f, 0);
-        transform.localScale = new Vector3(0.215f, 0.37f, 1);
+        transform.position = new Vector3(30.15f, 0, 0);
+        transform.localScale = new Vector3(0.2095707f, 0.3546388f, 1);
     }
 
     private void setChopped()
     {
-        transform.position = new Vector3(30, -1.62f, 0);
+        transform.position = new Vector3(29.91f, -2.42f, 0);
         transform.localScale = new Vector3(0.27f, 0.35f, 1);
     }
 

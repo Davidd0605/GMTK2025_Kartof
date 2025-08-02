@@ -61,7 +61,7 @@ public class presentTree : MonoBehaviour
 
     private void setTree()
     {
-        transform.position = new Vector3(7.38f, -0.97f, 0);
+        transform.position = new Vector3(6.11f, -1.52f, 0);
         transform.localScale = new Vector3(0.35f, 0.35f, 1);
     }
 }
