@@ -19,7 +19,7 @@ public class CameraMovement : MonoBehaviour
         {
 
             targetPosition = new Vector3(player.position.x, transform.position.y, -10);
-            targetPosition.x = Mathf.Clamp(targetPosition.x, clamp, clamp+1.5f);
+            targetPosition.x = Mathf.Clamp(targetPosition.x, clamp, clamp+0.8f);
             transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing);
         }
     }

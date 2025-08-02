@@ -10,6 +10,7 @@ public class DialogueBox : MonoBehaviour
     private Queue<string> lines = new Queue<string>();
     private string currentLine;
     [SerializeField] private float textSpeed;
+    [SerializeField] private AudioManager audioManager;
     private bool isTyping;
 
     void Start()
@@ -68,6 +69,7 @@ public class DialogueBox : MonoBehaviour
         {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
+            audioManager.Play("talk", Random.Range(0.9f, 1.1f));
         }
         isTyping = false;
     }
