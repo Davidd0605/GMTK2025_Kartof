@@ -38,7 +38,7 @@ public class SceneController : MonoBehaviour
             if (postEffectDelay > 0)
             {
                 postEffectDelay -= Time.deltaTime;
-                if (postEffectDelay <= 0)
+                if (postEffectDelay <= 2f)
                 {
                     FinishTransition();
                 }
@@ -71,7 +71,7 @@ public class SceneController : MonoBehaviour
         if (timeTravelEffect != null)
         {
             timeTravelEffect.TriggerTimeTravel();
-            postEffectDelay = (timeTravelEffect.effectDuration + timeTravelEffect.effectDisplacement)/2;
+            postEffectDelay = timeTravelEffect.effectDuration + timeTravelEffect.effectDisplacement;
         }
         else
         {

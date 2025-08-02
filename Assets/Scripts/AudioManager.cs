@@ -5,6 +5,7 @@ using System;
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] private Sound[] sounds;
+    [SerializeField] private float volumeMultiplier = 1;
     public static AudioManager instance;
     void Awake()
     {
@@ -32,5 +33,13 @@ public class AudioManager : MonoBehaviour
         if (sound.randomPitch)
             sound.RandomPitch(sound.pitch);
         sound.source.Play();
+    }
+
+    public void SetVolume()
+    {
+        foreach (Sound sound in sounds)
+        {
+            sound.source.volume = sound.volume * volumeMultiplier;
+        }
     }
 }

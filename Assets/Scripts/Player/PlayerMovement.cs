@@ -13,11 +13,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float soundCooldown;
     private bool playSound = true;
     private Vector2 movement;
-    private static PlayerMovement instance;
 
     void Update()
     {
-        // Get horizontal input using the old Input system
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         movement = new Vector2(horizontalInput, 0f).normalized;
         anim.SetInteger("Horizontal", (int)horizontalInput);
@@ -40,7 +38,6 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Use MovePosition for smooth physics-based movement
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 }

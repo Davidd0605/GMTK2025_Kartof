@@ -1,12 +1,13 @@
 using UnityEngine;
 
-public class InteractableObject : MonoBehaviour
+public class UIInteractable : MonoBehaviour
 {
 
     private GameObject player;
 
     [SerializeField] private float pickupThreshold = 2.0f;
-    [SerializeField] private int itemId;
+    [SerializeField] private GameObject ui;
+    [SerializeField] private GameObject nonevents;
 
     public Material highlightMaterial;
     public Material defaultMaterial;
@@ -28,30 +29,25 @@ public class InteractableObject : MonoBehaviour
         if (distance < pickupThreshold)
         {
 
-            
+
             GetComponent<SpriteRenderer>().material = highlightMaterial;
             GetComponent<SpriteRenderer>().material.SetFloat("_Thickness", Mathf.Abs(Mathf.Sin(Time.time) * 10));
             if (Input.GetKeyDown(KeyCode.E))
             {
-                try
-                {
-                    player.GetComponent<InventoryManager>().addItem(itemId);
-                    GameObject dialogueManager = GameObject.Find("DialogueManager");
-
-                    foreach (var ln in lines)
-                    {
-                        dialogueManager.GetComponent<DialogueBox>().addLine(ln);
-                    }
-                    Destroy(gameObject);
-
-                } catch (System.InvalidOperationException e)
-                {
-                    //Display some message idk
-                }
-
+                GameObject dialogueManager = GameObject.Find("DialogueManager");
+                nonevents.SetActive(false);
+                ui.SetActive(true);
+                Time.timeScale = 0f;
+            }
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                nonevents.SetActive(true);
+                ui.SetActive(false);
+                Time.timeScale = 1f;
             }
             swapped = false;
-        } else
+        }
+        else
         {
             if (swapped == false)
             {
