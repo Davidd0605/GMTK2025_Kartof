@@ -4422,12 +4422,12 @@ MonoBehaviour:
     randomPitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: theme
+    clip: {fileID: 8300000, guid: 1466b8d80aa760c408e5436184ed2b8d, type: 3}
+    volume: 0.1
+    pitch: 1
     randomPitch: 0
-    loop: 0
+    loop: 1
     source: {fileID: 0}
 --- !u!4 &955033461
 Transform:

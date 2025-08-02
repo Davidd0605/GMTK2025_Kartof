@@ -8,7 +8,6 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
     void Awake()
     {
-
         if (instance == null)
             instance = this;
         else
@@ -24,6 +23,7 @@ public class AudioManager : MonoBehaviour
             sound.source.pitch = sound.pitch;
             sound.source.loop = sound.loop;
         }
+        Play("theme");
     }
 
     public void Play (string name)

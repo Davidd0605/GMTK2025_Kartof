@@ -15,6 +15,7 @@ public class Sound
     public bool randomPitch;
     public bool loop;
 
+    [HideInInspector]
     public AudioSource source;
 
     public void RandomPitch(float pitch)
