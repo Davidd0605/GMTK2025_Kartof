@@ -1,9 +1,13 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class TextInput : MonoBehaviour
 {
     [SerializeField] private AudioManager audioManager;
+
+    [SerializeField] private DialogueBox dialogue;
+    [SerializeField] private String failedText;
 
     public void PlaySound()
     {
@@ -17,7 +21,8 @@ public class TextInput : MonoBehaviour
         }
         else
         {
-            Debug.Log(":(");
+            dialogue.clearBox();
+            dialogue.addLine(failedText);
         }
     }
 
