@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static UnityEngine.Rendering.DebugUI;
 
 public class ComicController : MonoBehaviour
@@ -50,6 +51,7 @@ public class ComicController : MonoBehaviour
         else
         {
             Debug.Log("Comic finished. Load next scene.");
+            SceneManager.LoadScene("PuzzleScene");
         }
     }
 

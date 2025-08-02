@@ -58,7 +58,7 @@ public class SceneController : MonoBehaviour
 
     public void AdvanceTime()
     {
-        if (!isTransitioning)
+        if (!isTransitioning && !player.GetComponent<PlayerMovement>().midEvent)
         {
             StartTransition();
         }

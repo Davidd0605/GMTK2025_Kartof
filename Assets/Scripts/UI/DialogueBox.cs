@@ -48,8 +48,7 @@ public class DialogueBox : MonoBehaviour
 
         if (lines.Count == 0 && !isTyping && Input.GetMouseButtonDown(0))
         {
-            textComponent.text = string.Empty;
-            textBox.SetActive(false);
+            clearBox();
         }
     }
 
@@ -79,5 +78,10 @@ public class DialogueBox : MonoBehaviour
         lines.Enqueue(line);
     }
 
+    public void clearBox()
+    {
+        textComponent.text = string.Empty;
+        textBox.SetActive(false);
+    }
 
 }

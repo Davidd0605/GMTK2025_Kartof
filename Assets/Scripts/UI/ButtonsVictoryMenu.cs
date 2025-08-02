@@ -6,7 +6,7 @@ public class ButtonsVictoryMenu : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        //call to main menu
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame()

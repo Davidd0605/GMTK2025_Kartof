@@ -7,7 +7,7 @@ public class Buttons : MonoBehaviour
 
     public void LoadScene()
     {
-        SceneManager.LoadScene("Timeline1");
+        SceneManager.LoadScene("ComicScene");
     }
 
     public void LoadOptionsMenu()
