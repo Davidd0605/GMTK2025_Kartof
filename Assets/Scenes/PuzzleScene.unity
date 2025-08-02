@@ -352,14 +352,14 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 328c2c04d570ac347843e4d3ee0fcdb9, type: 2}
+  m_sharedMaterial: {fileID: -2505469446307887738, guid: 328c2c04d570ac347843e4d3ee0fcdb9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -382,7 +382,7 @@ MonoBehaviour:
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 36
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -1749,6 +1749,8 @@ MonoBehaviour:
   anim: {fileID: 299927511}
   audioManager: {fileID: 955033460}
   soundCooldown: 0.4
+  midEvent: 0
+  canInteract: 1
 --- !u!50 &299927505
 Rigidbody2D:
   serializedVersion: 5
