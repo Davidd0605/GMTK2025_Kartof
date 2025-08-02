@@ -71,7 +71,7 @@ public class SceneController : MonoBehaviour
         if (timeTravelEffect != null)
         {
             timeTravelEffect.TriggerTimeTravel();
-            postEffectDelay = timeTravelEffect.effectDuration + timeTravelEffect.effectDisplacement;
+            postEffectDelay = (timeTravelEffect.effectDuration + timeTravelEffect.effectDisplacement)/2;
         }
         else
         {
