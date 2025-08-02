@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9069431607063176619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8079408571187804304}
+  - component: {fileID: 7859523061952941217}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: AudioManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8079408571187804304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9069431607063176619}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.57256, y: -17.74305, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7859523061952941217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9069431607063176619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d474c3c61ed7e449dd8febfe0b3486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: walk
+    clip: {fileID: 8300000, guid: 77933c4e930e7d449b89214b04fd01f5, type: 3}
+    volume: 0.2
+    pitch: 1
+    randomPitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: theme
+    clip: {fileID: 8300000, guid: b7136072837ab844b97b7576031e70a8, type: 3}
+    volume: 0.1
+    pitch: 1
+    randomPitch: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: pickup
+    clip: {fileID: 8300000, guid: f774060f801c2da4e81bd41647e9ef83, type: 3}
+    volume: 0.2
+    pitch: 1
+    randomPitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: craft
+    clip: {fileID: 8300000, guid: 741ca0b80e6017a499787615c900594c, type: 3}
+    volume: 0.2
+    pitch: 1
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: travel
+    clip: {fileID: 8300000, guid: f51cda0a0817e4c409b28db66dfd2f4c, type: 3}
+    volume: 0.4
+    pitch: 1
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: digit
+    clip: {fileID: 8300000, guid: 40b67d41e1b2e124eae4c2a8e42d6c23, type: 3}
+    volume: 0.2
+    pitch: 1
+    randomPitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: talk
+    clip: {fileID: 8300000, guid: ed8f780e48fde76468585b155dbcd77a, type: 3}
+    volume: 0.2
+    pitch: 1
+    randomPitch: 1
+    loop: 0
+    source: {fileID: 0}

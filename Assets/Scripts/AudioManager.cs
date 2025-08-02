@@ -37,7 +37,23 @@ public class AudioManager : MonoBehaviour
     {
         foreach (Sound sound in sounds)
         {
+            sound.source = gameObject.GetComponent<AudioSource>();
             sound.source.volume = sound.volume * volumeMultiplier;
         }
+    }
+
+    public void SetVolumeMusic(float volumeMultiplier)
+    {
+        Sound sound = Array.Find(sounds, sound => sound.name == "theme");
+        sound.source.volume = sound.volume * volumeMultiplier;
+    }
+
+    public void SetVolumeSFX(float volumeMultiplier)
+    {
+        foreach (Sound sound in sounds)
+        {
+            sound.source.volume = sound.volume * volumeMultiplier;
+        }
+        Play("talk", 1f);
     }
 }
