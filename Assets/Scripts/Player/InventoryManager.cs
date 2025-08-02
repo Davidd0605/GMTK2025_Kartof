@@ -85,7 +85,14 @@ public class InventoryManager : MonoBehaviour
 
     public int getHeldItemId()
     {
-        return itemIdList[selectedIndex];
+        if (selectedIndex != -1)
+        {
+            return itemIdList[selectedIndex];
+        } else
+        {
+            return -1;
+        }
+
     }
 
     public void clearHeldItem()

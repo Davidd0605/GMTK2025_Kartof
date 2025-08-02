@@ -78,7 +78,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4025776117869997992, guid: ff4db5ef103455c4fb366a32e9d0e6df, type: 3}
       propertyPath: 'lines.Array.data[1]'
-      value: Rocks also like me.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4025776117869997992, guid: ff4db5ef103455c4fb366a32e9d0e6df, type: 3}
       propertyPath: 'lines.Array.data[2]'

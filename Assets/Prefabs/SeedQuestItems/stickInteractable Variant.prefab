@@ -13,9 +13,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 901472755011996927, guid: 5ef2c664e8d3cbb4bacb1024c6acb470, type: 3}
+      propertyPath: lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 901472755011996927, guid: 5ef2c664e8d3cbb4bacb1024c6acb470, type: 3}
       propertyPath: highlightMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 8c90d39ad7f20e84ab23c9fa920dd04b, type: 2}
+    - target: {fileID: 901472755011996927, guid: 5ef2c664e8d3cbb4bacb1024c6acb470, type: 3}
+      propertyPath: 'lines.Array.data[0]'
+      value: That is one sturdy stick...
+      objectReference: {fileID: 0}
+    - target: {fileID: 901472755011996927, guid: 5ef2c664e8d3cbb4bacb1024c6acb470, type: 3}
+      propertyPath: 'lines.Array.data[1]'
+      value: I think it could be used as a handle for something.
+      objectReference: {fileID: 0}
+    - target: {fileID: 901472755011996927, guid: 5ef2c664e8d3cbb4bacb1024c6acb470, type: 3}
+      propertyPath: 'lines.Array.data[2]'
+      value: 'GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE
+        GHE GHE GHE GHE '
+      objectReference: {fileID: 0}
     - target: {fileID: 4878337788916005038, guid: 5ef2c664e8d3cbb4bacb1024c6acb470, type: 3}
       propertyPath: m_Name
       value: stickInteractable Variant
