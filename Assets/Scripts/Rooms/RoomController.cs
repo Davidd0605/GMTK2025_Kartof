@@ -14,5 +14,6 @@ public class RoomController : MonoBehaviour
     public void TransportCamera(GameObject camera)
     {
         camera.transform.position = new Vector3(cameraPosition.position.x, cameraPosition.position.y, -10);
+        camera.GetComponent<CameraMovement>().clamp = cameraPosition.position.x - 1.5f;
     }
 }
