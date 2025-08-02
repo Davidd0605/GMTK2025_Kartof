@@ -32,7 +32,7 @@ public class UIInteractable : MonoBehaviour
 
             GetComponent<SpriteRenderer>().material = highlightMaterial;
             GetComponent<SpriteRenderer>().material.SetFloat("_Thickness", Mathf.Abs(Mathf.Sin(Time.time) * 10));
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && player.GetComponent<PlayerMovement>().canInteract)
             {
                 GameObject dialogueManager = GameObject.Find("DialogueManager");
                 foreach (var ln in lines)
@@ -41,13 +41,13 @@ public class UIInteractable : MonoBehaviour
                 }
                 nonevents.SetActive(false);
                 ui.SetActive(true);
-                Time.timeScale = 0f;
+                player.GetComponent<PlayerMovement>().midEvent = true;
             }
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 nonevents.SetActive(true);
                 ui.SetActive(false);
-                Time.timeScale = 1f;
+                player.GetComponent<PlayerMovement>().midEvent = false;
             }
             swapped = false;
         }

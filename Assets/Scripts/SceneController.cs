@@ -46,13 +46,14 @@ public class SceneController : MonoBehaviour
             return;
         }
 
+        if (transitionTimer <= 0 && !player.GetComponent<PlayerMovement>().midEvent)
+        {
+            StartTransition();
+        }
+
         if (transitionTimer > 0)
         {
             transitionTimer -= Time.deltaTime;
-            if (transitionTimer <= 0)
-            {
-                StartTransition();
-            }
         }
     }
 
@@ -66,6 +67,7 @@ public class SceneController : MonoBehaviour
 
     private void StartTransition()
     {
+        player.GetComponent<PlayerMovement>().canInteract = false;
         isTransitioning = true;
 
         if (timeTravelEffect != null)
@@ -93,6 +95,7 @@ public class SceneController : MonoBehaviour
             anim.SetInteger("Timeline", currentRoom-(rooms.Count/2));
 
         //reset flags
+        player.GetComponent<PlayerMovement>().canInteract = true;
         isTransitioning = false;
         transitionTimer = timeSpentInScene;
         postEffectDelay = 0f;

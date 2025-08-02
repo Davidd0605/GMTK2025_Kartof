@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private AudioManager audioManager;
     [SerializeField] private float soundCooldown;
+
+    public bool midEvent = false;
+    public bool canInteract = true;
     private bool playSound = true;
     private Vector2 movement;
 
@@ -38,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        if (!midEvent)
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 }
