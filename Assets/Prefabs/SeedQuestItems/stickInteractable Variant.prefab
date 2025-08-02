@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 901472755011996927, guid: 5ef2c664e8d3cbb4bacb1024c6acb470, type: 3}
       propertyPath: lines.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 901472755011996927, guid: 5ef2c664e8d3cbb4bacb1024c6acb470, type: 3}
       propertyPath: highlightMaterial
