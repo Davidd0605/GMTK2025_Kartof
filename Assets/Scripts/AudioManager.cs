@@ -5,7 +5,6 @@ using System;
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] private Sound[] sounds;
-    [SerializeField] private float volumeMultiplier = 1;
     public static AudioManager instance;
     void Awake()
     {
@@ -24,18 +23,17 @@ public class AudioManager : MonoBehaviour
             sound.source.pitch = sound.pitch;
             sound.source.loop = sound.loop;
         }
-        Play("theme");
+        Play("theme", 1f);
     }
 
-    public void Play (string name)
+    public void Play (string name, float pitch)
     {
         Sound sound = Array.Find(sounds, sound => sound.name == name);
-        if (sound.randomPitch)
-            sound.RandomPitch(sound.pitch);
+        sound.source.pitch = pitch;
         sound.source.Play();
     }
 
-    public void SetVolume()
+    public void SetVolume(float volumeMultiplier)
     {
         foreach (Sound sound in sounds)
         {

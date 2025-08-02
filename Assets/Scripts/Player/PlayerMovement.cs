@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator WalkingSound()
     {
-        audioManager.Play("walk");
+        audioManager.Play("walk", Random.Range(0.7f, 1.3f));
         yield return new WaitForSeconds(soundCooldown);
         playSound = true;
     }
