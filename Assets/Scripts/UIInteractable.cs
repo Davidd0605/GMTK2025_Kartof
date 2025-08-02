@@ -35,6 +35,10 @@ public class UIInteractable : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 GameObject dialogueManager = GameObject.Find("DialogueManager");
+                foreach (var ln in lines)
+                {
+                    dialogueManager.GetComponent<DialogueBox>().addLine(ln);
+                }
                 nonevents.SetActive(false);
                 ui.SetActive(true);
                 Time.timeScale = 0f;
