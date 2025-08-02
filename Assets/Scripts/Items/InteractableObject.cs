@@ -32,9 +32,8 @@ public class InteractableObject : MonoBehaviour
             
             GetComponent<SpriteRenderer>().material = highlightMaterial;
             GetComponent<SpriteRenderer>().material.SetFloat("_Thickness", Mathf.Abs(Mathf.Sin(Time.time) * 10));
-            if (Input.GetKeyDown(KeyCode.E)) //pickup
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                //check if can be added
                 try
                 {
                     player.GetComponent<InventoryManager>().addItem(itemId);
