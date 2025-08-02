@@ -51,16 +51,6 @@ public class DialogueBox : MonoBehaviour
             textComponent.text = string.Empty;
             textBox.SetActive(false);
         }
-
-
-        //debugging
-
-        if (Input.GetMouseButtonDown(1))
-        {
-            addLine("GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE GHE");
-            addLine(""); 
-            addLine("Aaaaaa");
-        }
     }
 
     private void StartDialogue()

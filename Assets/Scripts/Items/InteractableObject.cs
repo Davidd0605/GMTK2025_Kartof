@@ -12,7 +12,7 @@ public class InteractableObject : MonoBehaviour
     public Material highlightMaterial;
     public Material defaultMaterial;
 
-
+    [SerializeField] string[] lines;
     private bool swapped;
     // Update is called once per frame
 
@@ -38,6 +38,12 @@ public class InteractableObject : MonoBehaviour
                 try
                 {
                     player.GetComponent<InventoryManager>().addItem(itemId);
+                    GameObject dialogueManager = GameObject.Find("DialogueManager");
+
+                    foreach (var ln in lines)
+                    {
+                        dialogueManager.GetComponent<DialogueBox>().addLine(ln);
+                    }
                     Destroy(gameObject);
 
                 } catch (System.InvalidOperationException e)
