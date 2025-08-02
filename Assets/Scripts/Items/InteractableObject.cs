@@ -7,6 +7,7 @@ public class InteractableObject : MonoBehaviour
 
     [SerializeField] private float pickupThreshold = 2.0f;
     [SerializeField] private int itemId;
+    [SerializeField] private AudioManager audioManager;
 
     public Material highlightMaterial;
     public Material defaultMaterial;
@@ -17,6 +18,7 @@ public class InteractableObject : MonoBehaviour
 
     private void Start()
     {
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
         player = GameObject.FindGameObjectWithTag("Player");
         swapped = false;
     }
@@ -42,6 +44,7 @@ public class InteractableObject : MonoBehaviour
                     {
                         dialogueManager.GetComponent<DialogueBox>().addLine(ln);
                     }
+                    audioManager.Play("pickup", Random.Range(0.9f, 1.1f));
                     Destroy(gameObject);
 
                 } catch (System.InvalidOperationException e)

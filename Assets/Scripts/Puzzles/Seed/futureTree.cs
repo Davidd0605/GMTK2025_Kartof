@@ -15,6 +15,7 @@ public class futureTree : MonoBehaviour
     [SerializeField] private Sprite stage1;
     [SerializeField] private Sprite stage2;
 
+    [SerializeField] private AudioManager audioManager;
     [SerializeField] private GameObject ui;
     [SerializeField] private GameObject nonevents;
     public string[] lines;
@@ -70,6 +71,7 @@ public class futureTree : MonoBehaviour
                 }
             } else if (chopped && player.GetComponent<PlayerMovement>().canInteract)
             {
+                audioManager.Play("pickup", 1f);
                 player.GetComponent<PlayerMovement>().midEvent = true;
                 GameObject dialogueManager = GameObject.Find("DialogueManager");
                 foreach (var ln in lines)

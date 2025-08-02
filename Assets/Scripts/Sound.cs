@@ -18,8 +18,4 @@ public class Sound
     [HideInInspector]
     public AudioSource source;
 
-    public void RandomPitch(float pitch)
-    {
-        pitch = Random.Range(pitch - 0.1f, pitch + 0.1f);
-    }
 }

@@ -8,6 +8,7 @@ public class TimeTravelEffect : MonoBehaviour
     [Header("VFX")]
 
     [SerializeField] private Volume volume;
+    [SerializeField] private float soundVolume;
     public float effectDuration = 2f;
     [Range(-1f, 1f)] public float effectDisplacement = -0.1f;
 
@@ -16,6 +17,8 @@ public class TimeTravelEffect : MonoBehaviour
     [SerializeField][Range(0f, 1f)] private float vignetteMaxIntensity = 0.5f;
     [SerializeField][Range(0f, 5f)] private float bloomMaxIntensity = 2f;
     [SerializeField][Range(0f, 5f)] private float gain = 2f;
+    [SerializeField] private AudioManager audioManager;
+    [SerializeField] private Animator anim;
 
     private ChromaticAberration chroma;
     private LensDistortion distortion;
@@ -27,6 +30,7 @@ public class TimeTravelEffect : MonoBehaviour
 
     void Start()
     {
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
         if (volume != null && volume.profile != null)
         {
             volume.profile.TryGet(out chroma);
@@ -41,10 +45,13 @@ public class TimeTravelEffect : MonoBehaviour
         if (isPlaying) return;
         elapsedTime = 0f;
         isPlaying = true;
+        audioManager.Play("travel", 1f);
+        anim.SetTrigger("Travel");
     }
 
     void Update()
     {
+        audioManager.SetVolume(soundVolume);
         if (!isPlaying) return;
 
         elapsedTime += Time.deltaTime;

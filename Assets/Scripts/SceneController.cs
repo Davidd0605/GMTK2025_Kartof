@@ -26,7 +26,6 @@ public class SceneController : MonoBehaviour
         currentRoom = startingRoom;
         transitionTimer = timeSpentInScene;
 
-        rooms[currentRoom].TransportPlayer(player, Vector3.zero);
         rooms[currentRoom].TransportCamera(camera);
     }
 

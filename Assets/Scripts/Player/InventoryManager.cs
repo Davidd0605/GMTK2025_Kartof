@@ -6,10 +6,12 @@ public class InventoryManager : MonoBehaviour
     private int[] itemIdList = new int[5];
     [SerializeField] private Button[] buttonList = new Button[5];
     [SerializeField] private Sprite emptySlotSprite;
+    [SerializeField] private AudioManager audioManager;
     public int selectedIndex = -1;
 
     private void Start()
     {
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
         for (int i = 0; i < itemIdList.Length; i++)
         {
             itemIdList[i] = -1;
@@ -40,6 +42,7 @@ public class InventoryManager : MonoBehaviour
             if(ItemInteractionMatrix
                 .GetCombinationResult(itemIdList[selectedIndex], itemIdList[index]) != -1) //if there is some combination
             {
+                audioManager.Play("craft", 1f);
                 itemIdList[index] = ItemInteractionMatrix
                 .GetCombinationResult(itemIdList[selectedIndex], itemIdList[index]);
                 buttonList[index].image.sprite = SpriteMap.GetSprite(itemIdList[index]);
