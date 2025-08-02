@@ -6,9 +6,7 @@ public class InventoryManager : MonoBehaviour
     private int[] itemIdList = new int[5];
     [SerializeField] private Button[] buttonList = new Button[5];
     [SerializeField] private Sprite emptySlotSprite;
-    private int selectedIndex = -1;
-
-
+    public int selectedIndex = -1;
 
     private void Start()
     {
@@ -21,8 +19,7 @@ public class InventoryManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            selectedIndex = -1;
-            resetCursor();
+            clearHeldItem();
         }
     }
 
@@ -78,11 +75,25 @@ public class InventoryManager : MonoBehaviour
             throw new System.InvalidOperationException("Inventory is full");
         }
     }
+
     public void removeItem(int index)
     {
         itemIdList[index] = -1;
         buttonList[index].image.sprite = emptySlotSprite;
     }
+
+
+    public int getHeldItemId()
+    {
+        return itemIdList[selectedIndex];
+    }
+
+    public void clearHeldItem()
+    {
+        selectedIndex = -1;
+        resetCursor();
+    }
+
     private void swapItems(int index1, int index2)
     {
         Sprite auxSprite = buttonList[index1].image.sprite;
@@ -114,4 +125,5 @@ public class InventoryManager : MonoBehaviour
     {
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
+
 }
