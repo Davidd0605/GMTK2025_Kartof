@@ -1,0 +1,515 @@
+fileFormatVersion: 2
+guid: 52670abe3e7ba2b4fa7ebf3fd92705c6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1214931111631106365
+    second: StandingWithGoggles_0
+  - first:
+      213: -7416662788059085933
+    second: StandingWithGoggles_1
+  - first:
+      213: 1715084739192739402
+    second: StandingWithGoggles_2
+  - first:
+      213: 4248976649962981397
+    second: StandingWithGoggles_3
+  - first:
+      213: 574038445679692981
+    second: StandingWithGoggles_4
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: StandingWithGoggles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4752
+        width: 545
+        height: 1584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d31b757b86d4cd010800000000000000
+      internalID: 1214931111631106365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StandingWithGoggles_1
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 4752
+        width: 545
+        height: 1584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39341ea4d78b21990800000000000000
+      internalID: -7416662788059085933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StandingWithGoggles_2
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 4752
+        width: 545
+        height: 1584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a46d64fbb743dc710800000000000000
+      internalID: 1715084739192739402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StandingWithGoggles_3
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 4752
+        width: 545
+        height: 1584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51809f740c567fa30800000000000000
+      internalID: 4248976649962981397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StandingWithGoggles_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3168
+        width: 545
+        height: 1584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bcc72acce467f700800000000000000
+      internalID: 574038445679692981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StandingWithGoggles_5
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 3168
+        width: 545
+        height: 1584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e107710c7cf5a724fbe40ff4e883e502
+      internalID: -1921885372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StandingWithGoggles_6
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 3168
+        width: 545
+        height: 1584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def74b7d539974644a8c4fe0f5f687c5
+      internalID: -1006727337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StandingWithGoggles_7
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 3168
+        width: 545
+        height: 1584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dad601ada9b7f0428ea71a68973656d
+      internalID: 1583967108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StandingWithGoggles_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1584
+        width: 545
+        height: 1584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d71dfcda2aac08344af7956667ab5028
+      internalID: -785778519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StandingWithGoggles_9
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 1584
+        width: 545
+        height: 1584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e2767b06ef9ab4ab1a25973fdb61c2
+      internalID: -115603856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StandingWithGoggles_10
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1584
+        width: 545
+        height: 1584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803c9c6dca2f80c4f955441427d4a5bd
+      internalID: -1112197219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StandingWithGoggles_11
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1584
+        width: 545
+        height: 1584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8149e9a6a48ef489c9c7690dbd4185
+      internalID: -424867551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StandingWithGoggles_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 545
+        height: 1584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73277f099fdf2494b997ed71085bf0e7
+      internalID: -1714332067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StandingWithGoggles_13
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 0
+        width: 545
+        height: 1584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba4b4ef6a6a7384da2c594f9d0a5aec
+      internalID: 1912708809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StandingWithGoggles_14
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 0
+        width: 545
+        height: 1584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4cef3a7e982bf941a7435d991984ef2
+      internalID: 1371431500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StandingWithGoggles_15
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 0
+        width: 545
+        height: 1584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ebd8cf71f307e04387328261a188cc1
+      internalID: 876723914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f5f7d2a6283fa684fa8fb7b240c1b3e0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":545.0,"y":1584.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      StandingWithGoggles_0: 1214931111631106365
+      StandingWithGoggles_1: -7416662788059085933
+      StandingWithGoggles_10: -1112197219
+      StandingWithGoggles_11: -424867551
+      StandingWithGoggles_12: -1714332067
+      StandingWithGoggles_13: 1912708809
+      StandingWithGoggles_14: 1371431500
+      StandingWithGoggles_15: 876723914
+      StandingWithGoggles_2: 1715084739192739402
+      StandingWithGoggles_3: 4248976649962981397
+      StandingWithGoggles_4: 574038445679692981
+      StandingWithGoggles_5: -1921885372
+      StandingWithGoggles_6: -1006727337
+      StandingWithGoggles_7: 1583967108
+      StandingWithGoggles_8: -785778519
+      StandingWithGoggles_9: -115603856
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
