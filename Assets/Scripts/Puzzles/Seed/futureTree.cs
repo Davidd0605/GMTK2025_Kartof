@@ -15,6 +15,8 @@ public class futureTree : MonoBehaviour
     [SerializeField] private Sprite stage1;
     [SerializeField] private Sprite stage2;
 
+    [SerializeField] private GameObject ui;
+    [SerializeField] private GameObject nonevents;
     public string[] lines;
 
     private bool swapped;
@@ -42,6 +44,12 @@ public class futureTree : MonoBehaviour
             spriteRenderer.sprite = stage2;
             setChopped();
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            nonevents.SetActive(true);
+            ui.SetActive(false);
+            player.GetComponent<PlayerMovement>().midEvent = false;
+        }
     }
 
     private void OnMouseDown()
@@ -60,22 +68,29 @@ public class futureTree : MonoBehaviour
                 {
                     dialogueBox.GetComponent<DialogueBox>().addLine("Maybe I can craft something to chop this tree.");
                 }
-            } else
+            } else if (chopped && player.GetComponent<PlayerMovement>().canInteract)
             {
-                dialogueBox.GetComponent<DialogueBox>().addLine("Suspicious looking stump.");
+                player.GetComponent<PlayerMovement>().midEvent = true;
+                GameObject dialogueManager = GameObject.Find("DialogueManager");
+                foreach (var ln in lines)
+                {
+                    dialogueManager.GetComponent<DialogueBox>().addLine(ln);
+                }
+                nonevents.SetActive(false);
+                ui.SetActive(true);
             }
         }
     }
 
     private void setFullGrown()
     {
-        transform.position = new Vector3(30.15f, 0, 0);
+        transform.localPosition = new Vector3(30.15f, 0, 0);
         transform.localScale = new Vector3(0.2095707f, 0.3546388f, 1);
     }
 
     private void setChopped()
     {
-        transform.position = new Vector3(29.91f, -2.42f, 0);
+        transform.localPosition = new Vector3(29.91f, -2.42f, 0);
         transform.localScale = new Vector3(0.27f, 0.35f, 1);
     }
 

@@ -55,13 +55,13 @@ public class presentTree : MonoBehaviour
 
     private void setTrash()
     {
-        transform.position = new Vector3(7.282f, -2.47f, 0);
+        transform.localPosition = new Vector3(6.05f, -2.908f, 0);
         transform.localScale = new Vector3(0.35f, 0.35f, 1);
     }
 
     private void setTree()
     {
-        transform.position = new Vector3(6.11f, -1.52f, 0);
+        transform.localPosition = new Vector3(6.11f, -1.52f, 0);
         transform.localScale = new Vector3(0.35f, 0.35f, 1);
     }
 }
