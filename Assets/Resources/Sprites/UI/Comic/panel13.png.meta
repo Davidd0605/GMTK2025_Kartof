@@ -117,9 +117,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 4272
-        height: 2844
+        y: 1896
+        width: 1068
+        height: 948
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,11 +134,253 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: panel13_1
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 1896
+        width: 1068
+        height: 948
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0345996103c7d344b0b64c1769886d3
+      internalID: -356614799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel13_2
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 1896
+        width: 1068
+        height: 948
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0283ab1b7d8541646b13949f0b717d69
+      internalID: -1848220375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel13_3
+      rect:
+        serializedVersion: 2
+        x: 3204
+        y: 1896
+        width: 1068
+        height: 948
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2614ca815c56ee4dad98ce6ce8fdb7e
+      internalID: -2043986051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel13_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 948
+        width: 1068
+        height: 948
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdfdc49c6fbaf5a419686c3a814983ca
+      internalID: 392676972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel13_5
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 948
+        width: 1068
+        height: 948
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3392144bee874844590ab774f236ff61
+      internalID: 782231007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel13_6
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 948
+        width: 1068
+        height: 948
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b05af1d46af684b91303049809c952
+      internalID: -729477820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel13_7
+      rect:
+        serializedVersion: 2
+        x: 3204
+        y: 948
+        width: 1068
+        height: 948
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002b3ca8e18c1b94aafa5afdced97878
+      internalID: 1690477264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel13_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1068
+        height: 948
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7382edb4c0e41aa4791e2a5bc7c68426
+      internalID: -2105843360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel13_9
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 0
+        width: 1068
+        height: 948
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c0a606e64e9da4f9d014df471b13b8
+      internalID: -802503630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel13_10
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 0
+        width: 1068
+        height: 948
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d772bbba6691f4d845554f51ba77fa
+      internalID: 1457080139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel13_11
+      rect:
+        serializedVersion: 2
+        x: 3204
+        y: 0
+        width: 1068
+        height: 948
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a909e496b2785c249bc4d6472afb8008
+      internalID: 2046631758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6930708bf37451844bc48f7f384a5c13
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +388,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1068.0,"y":948.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       panel13_0: -4302610005463238869
+      panel13_1: -356614799
+      panel13_10: 1457080139
+      panel13_11: 2046631758
+      panel13_2: -1848220375
+      panel13_3: -2043986051
+      panel13_4: 392676972
+      panel13_5: 782231007
+      panel13_6: -729477820
+      panel13_7: 1690477264
+      panel13_8: -2105843360
+      panel13_9: -802503630
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

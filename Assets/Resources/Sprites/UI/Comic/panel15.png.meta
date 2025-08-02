@@ -117,9 +117,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 3668
-        height: 4000
+        y: 3000
+        width: 917
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,11 +134,341 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: panel15_1
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 3000
+        width: 917
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6806c717415e3d04c8ffea155c3a8026
+      internalID: -1435121725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel15_2
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 3000
+        width: 917
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8617bbc3d0d5442aa8a94bebad9f74
+      internalID: -46058491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel15_3
+      rect:
+        serializedVersion: 2
+        x: 2751
+        y: 3000
+        width: 917
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe135162b3beab46aac813dca59c943
+      internalID: -1347145448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel15_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 917
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de57bf3335affda47ae12aab8ed2b549
+      internalID: -550656167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel15_5
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 2000
+        width: 917
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a577fcab649fbf3459cb85e7610d2474
+      internalID: 2116532363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel15_6
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 2000
+        width: 917
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24ac48478519634aa332f930b3769ec
+      internalID: 322972298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel15_7
+      rect:
+        serializedVersion: 2
+        x: 2751
+        y: 2000
+        width: 917
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d564ec1ae0d156429591eb8c759ae2a
+      internalID: 523325532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel15_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 917
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416ce47ddf1401442a70e2c686857b93
+      internalID: -1602310605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel15_9
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 1000
+        width: 917
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42884a425a4d4a64db5329ba95350581
+      internalID: 1794459353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel15_10
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 1000
+        width: 917
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a2cd97477316c4faaac5b7e5c6d7bd
+      internalID: -1962840510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel15_11
+      rect:
+        serializedVersion: 2
+        x: 2751
+        y: 1000
+        width: 917
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3781ae4ef9192d34a891c1e35a01b9a3
+      internalID: 1402070943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel15_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 917
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02004524725d54d41a20d9df71dbe3a3
+      internalID: 1364558757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel15_13
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 0
+        width: 917
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbdfd207c9c3d7548b25ff043d2e4ab4
+      internalID: -912758964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel15_14
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 0
+        width: 917
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616283912eb087441bc7623cbd16661a
+      internalID: -1219107070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel15_15
+      rect:
+        serializedVersion: 2
+        x: 2751
+        y: 0
+        width: 917
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181a96383a6ca594799b2b4ceccffe8f
+      internalID: 1322361091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8de49427ce73d364bac78ef4778c859d
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +476,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":917.0,"y":1000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       panel15_0: -6236832413535868180
+      panel15_1: -1435121725
+      panel15_10: -1962840510
+      panel15_11: 1402070943
+      panel15_12: 1364558757
+      panel15_13: -912758964
+      panel15_14: -1219107070
+      panel15_15: 1322361091
+      panel15_2: -46058491
+      panel15_3: -1347145448
+      panel15_4: -550656167
+      panel15_5: 2116532363
+      panel15_6: 322972298
+      panel15_7: 523325532
+      panel15_8: -1602310605
+      panel15_9: 1794459353
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
