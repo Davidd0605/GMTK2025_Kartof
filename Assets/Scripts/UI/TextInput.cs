@@ -7,7 +7,7 @@ public class TextInput : MonoBehaviour
 
     public void PlaySound()
     {
-        audioManager.Play("pickup", 2f);
+        audioManager.Play("digit", 1f);
     }
     public void Check(string inputText)
     {
