@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TextInput : MonoBehaviour
 {
@@ -6,7 +7,7 @@ public class TextInput : MonoBehaviour
     {
         if(inputText == "7472")
         {
-            Debug.Log("YIPEEEEEEE");
+            SceneManager.LoadScene("VictoryScene");
         }
         else
         {
