@@ -12,7 +12,6 @@ public class SceneController : MonoBehaviour
     [SerializeField] private int currentRoom;
 
     [SerializeField] private float timeSpentInScene = 4f;
-    [SerializeField] private bool canSwitch = true;
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject camera;
     [SerializeField] private GameObject wheel;
