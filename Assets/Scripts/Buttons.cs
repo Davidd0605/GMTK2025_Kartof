@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
+    [SerializeField] GameObject optionsCanvas;
 
     public void LoadScene()
     {
@@ -11,14 +12,12 @@ public class Buttons : MonoBehaviour
 
     public void LoadOptionsMenu()
     {
-        transform.GetChild(1).gameObject.SetActive(true);
-        transform.GetChild(0).gameObject.SetActive(false);
+        optionsCanvas.SetActive(true);
     }
 
     public void LoadMainMenu()
     {
-        transform.GetChild(0).gameObject.SetActive(true);
-        transform.GetChild(1).gameObject.SetActive(false);
+        optionsCanvas.SetActive(false);
     }
 
     public void QuitGame()
