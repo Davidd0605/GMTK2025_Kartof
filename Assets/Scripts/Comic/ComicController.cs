@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static UnityEngine.Rendering.DebugUI;
 
 public class ComicController : MonoBehaviour
 {
@@ -10,6 +9,7 @@ public class ComicController : MonoBehaviour
     [SerializeField] private Vector3 exitPosition;
     [SerializeField] private Vector3 entryPosition;
     [SerializeField] private Vector3 stayPosition;
+    [SerializeField] private float moveDuration = 0.5f;
 
     private int panelIndex = 0;
 
@@ -17,34 +17,34 @@ public class ComicController : MonoBehaviour
     {
         for (int i = 0; i < panels.Count; i++)
         {
-            if (i == 0)
-                panels[i].transform.position = stayPosition;
-            else
-                panels[i].transform.position = entryPosition;
+            panels[i].transform.position = i == 0 ? stayPosition : entryPosition;
         }
 
         panels[0].ActivatePanel();
     }
 
-
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && panels[panelIndex].delayedReady)
+        if (Input.GetMouseButtonDown(0))
         {
-            AdvanceComic();
+            ComicPanel currentPanel = panels[panelIndex];
+
+            bool advanced = currentPanel.TryAdvanceSubPanel();
+
+            if (!advanced && currentPanel.delayedReady)
+            {
+                AdvanceComic();
+            }
         }
     }
 
-    [SerializeField] private float moveDuration = 0.5f;
-
-    public void AdvanceComic()
+    private void AdvanceComic()
     {
         if (panelIndex < panels.Count - 1)
         {
             ComicPanel currentPanel = panels[panelIndex];
             ComicPanel nextPanel = panels[panelIndex + 1];
 
-            //move current out, move next in
             StartCoroutine(MovePanel(currentPanel, currentPanel.transform.position, exitPosition, moveDuration));
             nextPanel.transform.position = entryPosition;
             StartCoroutine(MovePanel(nextPanel, entryPosition, stayPosition, moveDuration));
@@ -59,7 +59,6 @@ public class ComicController : MonoBehaviour
         }
     }
 
-
     private IEnumerator MovePanel(ComicPanel panel, Vector3 from, Vector3 to, float duration)
     {
         float time = 0f;
@@ -71,5 +70,4 @@ public class ComicController : MonoBehaviour
         }
         panel.transform.position = to;
     }
-
 }
