@@ -11,6 +11,8 @@ public class ComicController : MonoBehaviour
     [SerializeField] private Vector3 stayPosition;
     [SerializeField] private float moveDuration = 0.5f;
 
+    private bool useLock = false;
+
     private int panelIndex = 0;
 
     void Start()
@@ -55,7 +57,12 @@ public class ComicController : MonoBehaviour
         else
         {
             Debug.Log("Comic finished. Load next scene.");
-            LevelLoader.Instance.LoadNextLevel("PuzzleScene");
+            if(!useLock)
+            {
+                useLock = true;
+                LevelLoader.Instance.LoadNextLevel("PuzzleScene");
+            }
+            
         }
     }
 
