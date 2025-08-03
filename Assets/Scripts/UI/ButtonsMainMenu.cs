@@ -7,7 +7,7 @@ public class Buttons : MonoBehaviour
 
     public void LoadScene()
     {
-        SceneManager.LoadScene("ComicScene");
+        LevelLoader.Instance.LoadNextLevel("ComicScene");
     }
 
     public void LoadOptionsMenu()

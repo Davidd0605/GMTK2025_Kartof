@@ -6,7 +6,7 @@ public class ButtonsVictoryMenu : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        LevelLoader.Instance.LoadNextLevel("MainMenu");
     }
 
     public void QuitGame()
