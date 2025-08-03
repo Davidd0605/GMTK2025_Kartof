@@ -99,4 +99,9 @@ public class SceneController : MonoBehaviour
         transitionTimer = timeSpentInScene;
         postEffectDelay = 0f;
     }
+
+    public int getCurrentRoom()
+    {
+        return currentRoom;
+    }
 }

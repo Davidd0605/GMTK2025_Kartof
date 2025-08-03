@@ -82,6 +82,11 @@ public class futureTree : MonoBehaviour
                 ui.SetActive(true);
             }
         }
+
+        if (pastTree.GetComponent<pastTree>().planted == false)
+        {
+            dialogueBox.GetComponent<DialogueBox>().addLine("We could use some greenery around here.");
+        }
     }
 
     private void setFullGrown()
