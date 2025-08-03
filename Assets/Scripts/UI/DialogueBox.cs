@@ -13,6 +13,14 @@ public class DialogueBox : MonoBehaviour
     [SerializeField] private AudioManager audioManager;
     private bool isTyping;
 
+
+    private int currentScene;
+    private bool visitedPresentFirst = false;
+    private bool visitedPresentSecond = false;
+    private bool looped = false;
+
+    [SerializeField] private GameObject sceneManager;
+
     void Start()
     {
         textBox.SetActive(false);
@@ -24,6 +32,8 @@ public class DialogueBox : MonoBehaviour
 
     void Update()
     {
+        currentScene = sceneManager.GetComponent<SceneController>().getCurrentRoom();
+        sceneMessages();
         if (isTyping && Input.GetMouseButtonDown(0))
         {
             StopAllCoroutines();
@@ -86,4 +96,28 @@ public class DialogueBox : MonoBehaviour
         textBox.SetActive(false);
     }
 
+    private void sceneMessages()
+    {
+        if (currentScene == 2)
+        {
+            if (visitedPresentFirst == false)
+            {
+                visitedPresentFirst = true;
+                addLine("I need to find out what that password is...");
+                addLine("Maybe I can find some clues around here.");
+                return;
+            }
+
+            if (visitedPresentSecond == false && looped == true)
+            {
+                visitedPresentSecond = true;
+                addLine("Ugh... What!?");
+                addLine("It seems I am stuck in a loop.");
+                return;
+            }
+        } else
+        {
+            looped = true;
+        }
+    }
 }
