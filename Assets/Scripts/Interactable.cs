@@ -7,6 +7,7 @@ public class Interactable : MonoBehaviour
     private void OnMouseDown()
     {
         GameObject dialogueManager = GameObject.Find("DialogueManager");
+        dialogueManager.GetComponent<DialogueBox>().clearAllDialogue();
         foreach (var ln in lines)
         {
             dialogueManager.GetComponent<DialogueBox>().addLine(ln);

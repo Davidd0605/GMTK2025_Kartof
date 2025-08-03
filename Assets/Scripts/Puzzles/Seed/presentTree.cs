@@ -35,6 +35,7 @@ public class presentTree : MonoBehaviour
 
     private void OnMouseDown()
     {
+        dialogueBox.GetComponent<DialogueBox>().clearAllDialogue();
         if (swapped == true)
         {
             if (player.GetComponent<InventoryManager>().getHeldItemId() == 3)

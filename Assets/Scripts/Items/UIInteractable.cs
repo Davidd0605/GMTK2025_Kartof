@@ -36,6 +36,7 @@ public class UIInteractable : MonoBehaviour
             {
                 audioManager.Play("craft", 1f);
                 GameObject dialogueManager = GameObject.Find("DialogueManager");
+                dialogueManager.GetComponent<DialogueBox>().clearAllDialogue();
                 foreach (var ln in lines)
                 {
                     dialogueManager.GetComponent<DialogueBox>().addLine(ln);

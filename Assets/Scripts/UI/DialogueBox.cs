@@ -2,9 +2,9 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+
 public class DialogueBox : MonoBehaviour
 {
-
     public TextMeshProUGUI textComponent;
     public GameObject textBox;
     private Queue<string> lines = new Queue<string>();
@@ -13,8 +13,8 @@ public class DialogueBox : MonoBehaviour
     [SerializeField] private AudioManager audioManager;
     private bool isTyping;
 
-
     private int currentScene;
+    private int lastScene = -1;
     private bool visitedPresentFirst = false;
     private bool visitedPresentSecond = false;
     private bool looped = false;
@@ -34,6 +34,7 @@ public class DialogueBox : MonoBehaviour
     {
         currentScene = sceneManager.GetComponent<SceneController>().getCurrentRoom();
         sceneMessages();
+
         if (isTyping && Input.GetMouseButtonDown(0))
         {
             StopAllCoroutines();
@@ -41,20 +42,20 @@ public class DialogueBox : MonoBehaviour
             isTyping = false;
             return;
         }
-        //If can pull, pull
+
         if (lines.Count != 0 && !isTyping)
         {
             if (textComponent.text == string.Empty)
             {
                 StartDialogue();
-            } else
+            }
+            else
             {
-                if(Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButtonDown(0))
                 {
                     StartDialogue();
                 }
             }
-
         }
 
         if (lines.Count == 0 && !isTyping && Input.GetMouseButtonDown(0))
@@ -65,7 +66,6 @@ public class DialogueBox : MonoBehaviour
 
     private void StartDialogue()
     {
-        //dequeue current line, set the thing to active and start typing.
         isTyping = true;
         currentLine = lines.Dequeue();
         textComponent.text = string.Empty;
@@ -84,7 +84,6 @@ public class DialogueBox : MonoBehaviour
         isTyping = false;
     }
 
-
     public void addLine(string line)
     {
         lines.Enqueue(line);
@@ -98,19 +97,24 @@ public class DialogueBox : MonoBehaviour
 
     public void clearAllDialogue()
     {
-        lines.Clear();              
-        StopAllCoroutines();        
-        textComponent.text = string.Empty; 
-        textBox.SetActive(false);   
-        isTyping = false;           
-        currentLine = string.Empty; 
+        lines.Clear();
+        StopAllCoroutines();
+        textComponent.text = string.Empty;
+        textBox.SetActive(false);
+        isTyping = false;
+        currentLine = string.Empty;
     }
 
     private void sceneMessages()
     {
+        if (currentScene == lastScene) return;
+        lastScene = currentScene;
+
+        clearAllDialogue();
+
         if (currentScene == 2)
         {
-            if (visitedPresentFirst == false)
+            if (!visitedPresentFirst)
             {
                 visitedPresentFirst = true;
                 addLine("I need to find out what that password is...");
@@ -118,14 +122,15 @@ public class DialogueBox : MonoBehaviour
                 return;
             }
 
-            if (visitedPresentSecond == false && looped == true)
+            if (!visitedPresentSecond && looped)
             {
                 visitedPresentSecond = true;
                 addLine("Ugh... What!?");
                 addLine("It seems I am stuck in a loop.");
                 return;
             }
-        } else
+        }
+        else
         {
             looped = true;
         }

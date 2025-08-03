@@ -56,13 +56,13 @@ public class futureTree : MonoBehaviour
     {
         if (pastTree.GetComponent<pastTree>().planted == true)
         {
+            dialogueBox.GetComponent<DialogueBox>().clearAllDialogue();
             if (!chopped)
             {
                 if (player.GetComponent<InventoryManager>().getHeldItemId() == 3)
                 {
                     dialogueBox.GetComponent<DialogueBox>().addLine("Timbeeeeeer!!!");
                     chopped = true;
-
                 }
                 else
                 {

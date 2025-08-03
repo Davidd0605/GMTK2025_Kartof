@@ -39,7 +39,7 @@ public class InteractableObject : MonoBehaviour
                 {
                     player.GetComponent<InventoryManager>().addItem(itemId);
                     GameObject dialogueManager = GameObject.Find("DialogueManager");
-
+                    dialogueManager.GetComponent<DialogueBox>().clearAllDialogue();
                     foreach (var ln in lines)
                     {
                         dialogueManager.GetComponent<DialogueBox>().addLine(ln);

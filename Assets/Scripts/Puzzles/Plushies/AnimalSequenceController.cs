@@ -60,7 +60,7 @@ public class AnimalSequenceController : MonoBehaviour
 
         if (currentLionPresses > lionPressesRequired || currentBearPresses > bearPressesRequired || currentBullPresses > bullPressesRequired)
         {
-
+            dialogue.GetComponent<DialogueBox>().clearAllDialogue();
             dialogue.addLine("Something isn't right, try again.");
             currentLionPresses = 0;
             currentBearPresses = 0;

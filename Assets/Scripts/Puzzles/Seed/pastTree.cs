@@ -17,6 +17,7 @@ public class pastTree : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        dialogueBox.GetComponent<DialogueBox>().clearAllDialogue();
         if (!planted)
         {
             if (player.GetComponent<InventoryManager>().getHeldItemId() == 4)
