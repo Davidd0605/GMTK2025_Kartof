@@ -17,7 +17,6 @@ public class futureTree : MonoBehaviour
 
     [SerializeField] private AudioManager audioManager;
     [SerializeField] private GameObject ui;
-    [SerializeField] private GameObject nonevents;
     public string[] lines;
 
     private bool swapped;
@@ -48,7 +47,6 @@ public class futureTree : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            nonevents.SetActive(true);
             ui.SetActive(false);
             player.GetComponent<PlayerMovement>().midEvent = false;
         }
@@ -79,7 +77,6 @@ public class futureTree : MonoBehaviour
                 {
                     dialogueManager.GetComponent<DialogueBox>().addLine(ln);
                 }
-                nonevents.SetActive(false);
                 ui.SetActive(true);
             }
         }
