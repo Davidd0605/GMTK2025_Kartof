@@ -457,7 +457,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 219, y: -13}
+  m_AnchoredPosition: {x: 219, y: 29}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &303681301
@@ -1478,7 +1478,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 233, y: -4}
+  m_AnchoredPosition: {x: 233, y: 50}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &821265267
@@ -2390,11 +2390,11 @@ RectTransform:
   - {fileID: 303681300}
   m_Father: {fileID: 1637816006}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -152, y: 96.64685}
-  m_SizeDelta: {x: 139.1354, y: 217.6591}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -152, y: 1.4764099}
+  m_SizeDelta: {x: 139.1354, y: 217.65912}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1297869846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2582,11 +2582,11 @@ RectTransform:
   - {fileID: 821265266}
   m_Father: {fileID: 1637816006}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 247, y: 96.64685}
-  m_SizeDelta: {x: 139.1354, y: 217.6591}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 247, y: 1.4764099}
+  m_SizeDelta: {x: 139.1354, y: 217.65912}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1466764124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3048,7 +3048,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -102, y: -192}
+  m_AnchoredPosition: {x: -102, y: -243}
   m_SizeDelta: {x: 1920, y: 203.71729}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1637816007
