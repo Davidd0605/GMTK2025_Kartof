@@ -17,6 +17,10 @@ public class PlayerMovement : MonoBehaviour
     private bool playSound = true;
     private Vector2 movement;
 
+    private void Start()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
+    }
     void Update()
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");

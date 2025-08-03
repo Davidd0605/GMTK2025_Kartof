@@ -1,6 +1,9 @@
 using UnityEngine.Audio;
 using UnityEngine;
 using System;
+using UnityEngine.UIElements;
+using System.Linq;
+using Unity.VisualScripting;
 
 public class AudioManager : MonoBehaviour
 {
@@ -8,8 +11,12 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
     void Awake()
     {
+        
+        DontDestroyOnLoad(gameObject);
         if (instance == null)
+        {
             instance = this;
+        }
         else
         {
             Destroy(gameObject);
@@ -23,6 +30,10 @@ public class AudioManager : MonoBehaviour
             sound.source.pitch = sound.pitch;
             sound.source.loop = sound.loop;
         }
+    }
+
+    public void Start()
+    {
         Play("theme", 1f);
     }
 
@@ -37,7 +48,6 @@ public class AudioManager : MonoBehaviour
     {
         foreach (Sound sound in sounds)
         {
-            sound.source = gameObject.GetComponent<AudioSource>();
             sound.source.volume = sound.volume * volumeMultiplier;
         }
     }
@@ -52,8 +62,9 @@ public class AudioManager : MonoBehaviour
     {
         foreach (Sound sound in sounds)
         {
-            sound.source.volume = sound.volume * volumeMultiplier;
+            if(sound.name != "theme")
+                sound.source.volume = sound.volume * volumeMultiplier;
+            Play("talk", 1f);
         }
-        Play("talk", 1f);
     }
 }

@@ -19,7 +19,7 @@ public class DialogueBox : MonoBehaviour
         textComponent.text = string.Empty;
         currentLine = string.Empty;
         isTyping = false;
-
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
     }
 
     void Update()
