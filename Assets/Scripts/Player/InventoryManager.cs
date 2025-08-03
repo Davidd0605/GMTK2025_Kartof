@@ -1,13 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
+
 public class InventoryManager : MonoBehaviour
 {
-
     private int[] itemIdList = new int[5];
     [SerializeField] private Button[] buttonList = new Button[5];
     [SerializeField] private Sprite emptySlotSprite;
     [SerializeField] private AudioManager audioManager;
     public int selectedIndex = -1;
+    [SerializeField] private Color higlight;
 
     private void Start()
     {
@@ -17,6 +18,7 @@ public class InventoryManager : MonoBehaviour
             itemIdList[i] = -1;
         }
     }
+
     void Update()
     {
         if (Input.GetMouseButtonDown(1))
@@ -27,11 +29,21 @@ public class InventoryManager : MonoBehaviour
 
     private void changeSelectedIndex(int index)
     {
+        for (int i = 0; i < buttonList.Length; i++)
+        {
+            buttonList[i].image.color = Color.white;
+        }
+
         selectedIndex = index;
+
         if (index != -1 && itemIdList[index] != -1)
         {
-
+            buttonList[index].image.color = higlight;
             setCursor(buttonList[index].image.sprite);
+        }
+        else
+        {
+            resetCursor();
         }
     }
 
@@ -39,29 +51,26 @@ public class InventoryManager : MonoBehaviour
     {
         if (selectedIndex != -1)
         {
-            if(ItemInteractionMatrix
-                .GetCombinationResult(itemIdList[selectedIndex], itemIdList[index]) != -1) //if there is some combination
+            if (ItemInteractionMatrix.GetCombinationResult(itemIdList[selectedIndex], itemIdList[index]) != -1)
             {
                 audioManager.Play("craft", 1f);
-                itemIdList[index] = ItemInteractionMatrix
-                .GetCombinationResult(itemIdList[selectedIndex], itemIdList[index]);
+                itemIdList[index] = ItemInteractionMatrix.GetCombinationResult(itemIdList[selectedIndex], itemIdList[index]);
                 buttonList[index].image.sprite = SpriteMap.GetSprite(itemIdList[index]);
                 removeItem(selectedIndex);
-
-            } else
+            }
+            else
             {
                 swapItems(index, selectedIndex);
             }
             index = -1;
             resetCursor();
-        } 
+        }
         changeSelectedIndex(index);
     }
 
     public void addItem(int id)
     {
         bool added = false;
-        
         for (int i = 0; i < itemIdList.Length; i++)
         {
             if (itemIdList[i] == -1)
@@ -85,23 +94,21 @@ public class InventoryManager : MonoBehaviour
         buttonList[index].image.sprite = emptySlotSprite;
     }
 
-
     public int getHeldItemId()
     {
         if (selectedIndex != -1)
         {
             return itemIdList[selectedIndex];
-        } else
+        }
+        else
         {
             return -1;
         }
-
     }
 
     public void clearHeldItem()
     {
-        selectedIndex = -1;
-        resetCursor();
+        changeSelectedIndex(-1);
     }
 
     private void swapItems(int index1, int index2)
@@ -114,6 +121,7 @@ public class InventoryManager : MonoBehaviour
         itemIdList[index1] = itemIdList[index2];
         itemIdList[index2] = auxValue;
     }
+
     private void setCursor(Sprite sprite)
     {
         if (sprite == null)
@@ -131,9 +139,9 @@ public class InventoryManager : MonoBehaviour
 
         Cursor.SetCursor(cursorTexture, hotspot, CursorMode.Auto);
     }
+
     private void resetCursor()
     {
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
-
 }
