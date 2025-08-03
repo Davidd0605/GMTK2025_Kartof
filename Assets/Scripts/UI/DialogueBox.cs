@@ -23,11 +23,11 @@ public class DialogueBox : MonoBehaviour
 
     void Start()
     {
+        audioManager = AudioManager.instance;
         textBox.SetActive(false);
         textComponent.text = string.Empty;
         currentLine = string.Empty;
         isTyping = false;
-        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
     }
 
     void Update()
@@ -94,6 +94,16 @@ public class DialogueBox : MonoBehaviour
     {
         textComponent.text = string.Empty;
         textBox.SetActive(false);
+    }
+
+    public void clearAllDialogue()
+    {
+        lines.Clear();              
+        StopAllCoroutines();        
+        textComponent.text = string.Empty; 
+        textBox.SetActive(false);   
+        isTyping = false;           
+        currentLine = string.Empty; 
     }
 
     private void sceneMessages()

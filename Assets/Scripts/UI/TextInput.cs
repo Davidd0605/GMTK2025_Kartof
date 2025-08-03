@@ -12,19 +12,23 @@ public class TextInput : MonoBehaviour
 
     public void PlaySound()
     {
+        audioManager = AudioManager.instance;
         audioManager.Play("digit", 1f);
+        
     }
     public void Check(string inputText)
     {
         if(inputText == "7472")
         {
             dialogue.clearBox();
+            dialogue.clearAllDialogue();
             dialogue.addLine(sucessText);
             Invoke("LoadVictoryScene", 2f);
         }
         else
         {
             dialogue.clearBox();
+            dialogue.clearAllDialogue();
             dialogue.addLine(failedText);
         }
     }

@@ -30,6 +30,7 @@ public class futureTree : MonoBehaviour
         player = GameObject.Find("Player");
         chopped = false;
         swapped = false;
+        audioManager = AudioManager.instance;
     }
 
     void Update()

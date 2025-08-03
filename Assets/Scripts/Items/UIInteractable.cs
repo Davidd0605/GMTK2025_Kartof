@@ -21,6 +21,7 @@ public class UIInteractable : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         swapped = false;
+        audioManager = AudioManager.instance;
     }
 
     void Update()
