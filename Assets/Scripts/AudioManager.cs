@@ -9,6 +9,8 @@ public class AudioManager : MonoBehaviour
 {
     [SerializeField] private Sound[] sounds;
     public static AudioManager instance;
+    public float currentMusicVolume = 1f;
+    public float currentSFXVolume = 1f;
     void Awake()
     {
         
@@ -48,7 +50,10 @@ public class AudioManager : MonoBehaviour
     {
         foreach (Sound sound in sounds)
         {
-            sound.source.volume = sound.volume * volumeMultiplier;
+            if (sound.name != "theme")
+                sound.source.volume = sound.volume * volumeMultiplier * currentSFXVolume;
+            if (sound.name == "theme")
+                sound.source.volume = sound.volume * volumeMultiplier * currentMusicVolume;
         }
     }
 
@@ -56,14 +61,18 @@ public class AudioManager : MonoBehaviour
     {
         Sound sound = Array.Find(sounds, sound => sound.name == "theme");
         sound.source.volume = sound.volume * volumeMultiplier;
+        currentMusicVolume = volumeMultiplier;
     }
 
     public void SetVolumeSFX(float volumeMultiplier)
     {
         foreach (Sound sound in sounds)
         {
-            if(sound.name != "theme")
+            if (sound.name != "theme")
+            {
                 sound.source.volume = sound.volume * volumeMultiplier;
+                currentSFXVolume = volumeMultiplier;
+            }
             Play("talk", 1f);
         }
     }
