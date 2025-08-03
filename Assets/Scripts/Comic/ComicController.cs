@@ -6,7 +6,7 @@ using static UnityEngine.Rendering.DebugUI;
 
 public class ComicController : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> panels = new List<GameObject>();
+    [SerializeField] private List<ComicPanel> panels = new List<ComicPanel>();
     [SerializeField] private Vector3 exitPosition;
     [SerializeField] private Vector3 entryPosition;
     [SerializeField] private Vector3 stayPosition;
@@ -22,11 +22,14 @@ public class ComicController : MonoBehaviour
             else
                 panels[i].transform.position = entryPosition;
         }
+
+        panels[0].ActivatePanel();
     }
 
 
-    void Update() {
-        if(Input.GetMouseButtonDown(0))
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0) && panels[panelIndex].delayedReady)
         {
             AdvanceComic();
         }
@@ -38,8 +41,8 @@ public class ComicController : MonoBehaviour
     {
         if (panelIndex < panels.Count - 1)
         {
-            GameObject currentPanel = panels[panelIndex];
-            GameObject nextPanel = panels[panelIndex + 1];
+            ComicPanel currentPanel = panels[panelIndex];
+            ComicPanel nextPanel = panels[panelIndex + 1];
 
             //move current out, move next in
             StartCoroutine(MovePanel(currentPanel, currentPanel.transform.position, exitPosition, moveDuration));
@@ -47,6 +50,7 @@ public class ComicController : MonoBehaviour
             StartCoroutine(MovePanel(nextPanel, entryPosition, stayPosition, moveDuration));
 
             panelIndex++;
+            panels[panelIndex].ActivatePanel();
         }
         else
         {
@@ -56,7 +60,7 @@ public class ComicController : MonoBehaviour
     }
 
 
-    private IEnumerator MovePanel(GameObject panel, Vector3 from, Vector3 to, float duration)
+    private IEnumerator MovePanel(ComicPanel panel, Vector3 from, Vector3 to, float duration)
     {
         float time = 0f;
         while (time < duration)
