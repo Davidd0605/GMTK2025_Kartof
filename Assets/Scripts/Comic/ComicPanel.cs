@@ -1,11 +1,9 @@
-using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ComicPanel : MonoBehaviour
 {
     private bool comicInteractable = false;
-
     private bool readyToAdvance;
     public bool delayedReady = false;
 
@@ -14,51 +12,46 @@ public class ComicPanel : MonoBehaviour
 
     private void Start()
     {
-        foreach (GameObject panel in subPanels)
+        for (int i = 0; i < subPanels.Count; i++)
         {
-            panel.SetActive(false);
+            subPanels[i].SetActive(i == 0);
         }
 
-        if(subPanels.Count <= 1)
+        if (subPanels.Count <= 1)
         {
             readyToAdvance = true;
         }
     }
 
-    private void Update()
-    {
-        if(!comicInteractable)
-        {
-            return;
-        }
-
-        if (readyToAdvance)
-        {
-            delayedReady = true;
-            return;
-        }
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            DisplayNextSubPanel();
-        }
-    }
-
     public void ActivatePanel()
     {
+        comicInteractable = true;
         DisplayNextSubPanel();
+    }
+
+    public bool TryAdvanceSubPanel()
+    {
+        if (!comicInteractable || readyToAdvance)
+        {
+            delayedReady = readyToAdvance;
+            return false;
+        }
+
+        DisplayNextSubPanel();
+        return true;
     }
 
     private void DisplayNextSubPanel()
     {
-        comicInteractable = true;
-
-        subPanels[currentSubPanel].SetActive(true);
-        currentSubPanel++;
+        if (currentSubPanel < subPanels.Count)
+        {
+            subPanels[currentSubPanel].SetActive(true);
+            currentSubPanel++;
+        }
 
         if (currentSubPanel >= subPanels.Count)
         {
             readyToAdvance = true;
         }
     }
- }
+}
