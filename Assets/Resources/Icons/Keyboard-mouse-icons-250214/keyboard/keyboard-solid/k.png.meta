@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 45c5c35edc62a254e8f407b8872dc3cc
+guid: ad24bd4df8bd92b4a9c37afd255f46c4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4765326696250296053
-    second: MockComic_0
+      213: 2845491494293411322
+    second: k_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MockComic_0
+      name: k_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 264
-        height: 179
+        x: 95
+        y: 95
+        width: 322
+        height: 322
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b09b0571e982eddb0800000000000000
-      internalID: -4765326696250296053
+      spriteID: af511c020773d7720800000000000000
+      internalID: 2845491494293411322
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MockComic_0: -4765326696250296053
+      k_0: 2845491494293411322
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
