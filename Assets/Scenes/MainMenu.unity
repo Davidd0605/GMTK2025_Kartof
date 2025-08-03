@@ -2495,6 +2495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1221671516}
   - component: {fileID: 1221671517}
+  - component: {fileID: 1221671518}
   m_Layer: 0
   m_Name: MusicVolume (1)
   m_TagString: Untagged
@@ -2575,8 +2576,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1723015588}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+      - m_Target: {fileID: 1221671518}
+        m_TargetAssemblyTypeName: SliderAudioControll, Assembly-CSharp
         m_MethodName: SetVolumeSFX
         m_Mode: 0
         m_Arguments:
@@ -2587,6 +2588,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1221671518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221671515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed6ea1b9ec0137649948a489fada6569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlMusicVolume: 0
 --- !u!1 &1317513796
 GameObject:
   m_ObjectHideFlags: 0
@@ -3032,6 +3046,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1526162356}
   - component: {fileID: 1526162357}
+  - component: {fileID: 1526162358}
   m_Layer: 0
   m_Name: MusicVolume
   m_TagString: Untagged
@@ -3112,8 +3127,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1723015588}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+      - m_Target: {fileID: 1526162358}
+        m_TargetAssemblyTypeName: SliderAudioControll, Assembly-CSharp
         m_MethodName: SetVolumeMusic
         m_Mode: 0
         m_Arguments:
@@ -3124,6 +3139,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1526162358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526162355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed6ea1b9ec0137649948a489fada6569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlMusicVolume: 1
 --- !u!1 &1568001414
 GameObject:
   m_ObjectHideFlags: 0
@@ -3428,17 +3456,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674205389}
   m_CullTransparentMesh: 1
---- !u!114 &1723015588 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7859523061952941217, guid: f1569514294d1e2448a8c7dc8912b090, type: 3}
-  m_PrefabInstance: {fileID: 381417288}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40d474c3c61ed7e449dd8febfe0b3486, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1797482999
 GameObject:
   m_ObjectHideFlags: 0

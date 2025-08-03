@@ -35,7 +35,7 @@ public class TextInput : MonoBehaviour
 
     private void LoadVictoryScene()
     {
-        SceneManager.LoadScene("VictoryScene");
+        LevelLoader.Instance.LoadNextLevel("VictoryScene");
     }
 
 }

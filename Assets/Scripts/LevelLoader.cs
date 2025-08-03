@@ -9,6 +9,8 @@ public class LevelLoader : MonoBehaviour
     [SerializeField] private Animator transition;
     [SerializeField] private float transitionTime = 1;
 
+    private bool useLock = false;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -28,11 +30,14 @@ public class LevelLoader : MonoBehaviour
 
     private IEnumerator LoadLevel(string sceneName)
     {
+        useLock = true;
         if (transition != null)
             transition.SetTrigger("Start");
 
         yield return new WaitForSeconds(transitionTime);
 
         SceneManager.LoadScene(sceneName);
+        useLock = false;
+
     }
 }

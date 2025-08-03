@@ -55,7 +55,7 @@ public class ComicController : MonoBehaviour
         else
         {
             Debug.Log("Comic finished. Load next scene.");
-            SceneManager.LoadScene("PuzzleScene");
+            LevelLoader.Instance.LoadNextLevel("PuzzleScene");
         }
     }
 
