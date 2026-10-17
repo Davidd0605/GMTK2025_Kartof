@@ -60,6 +60,8 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
+/Don'tBreakGlass_Windows/
+/Don'tBreakGlass_Web/
 
 # Crashlytics generated file
 crashlytics-build.properties
